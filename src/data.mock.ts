@@ -1,235 +1,228 @@
-import { Day } from "./types"
+import { Day, timeRequirementType } from "./types"
 
-export const timeRequirement = {
-        day: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday'],
-        classDuration: 135,
-        breakDuration: 15,
-        startTime: '07:00',
-        endTime: '17:00',
-        conditions: [
-            'friday|!=|12:00'
-        ],
-        maxCoursesPerDay: 2
-    }
+export const timeRequirement: timeRequirementType = {
+    day: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday'],
+    classDuration: 135,
+    breakDuration: 15,
+    startTime: '07:00',
+    endTime: '17:00',
+    conditions: [
+        'friday|!=|12:00'
+    ],
+    maxCoursesPerDay: 2
+}
 
 export const classSubject = [
-      {
-        subjectCode: "IF101",
-        subjectName: "Dasar Pemrograman",
-        roomType: "Teori",
-      },
-      {
-        subjectCode: "IF102",
-        subjectName: "Praktikum Dasar Pemrograman",
-        roomType: "Lab Komputer",
-      },
-      {
-        subjectCode: "IF201",
-        subjectName: "Struktur Data",
-        roomType: "Teori",
-      },
-      {
-        subjectCode: "IF202",
-        subjectName: "Basis Data",
-        roomType: "Teori",
-      },
-      {
-        subjectCode: "IF203",
-        subjectName: "Praktikum Basis Data",
-        roomType: "Lab Komputer",
-      },
-      {
-        subjectCode: "KU101",
-        subjectName: "Kalkulus I",
-        roomType: "Teori",
-      },
-      {
-        subjectCode: "KU105",
-        subjectName: "Bahasa Inggris I",
-        roomType: "Teori",
-      },
-      {
-        subjectCode: "SI301",
-        subjectName: "Analisis & Desain Sistem",
-        roomType: "Teori",
-      },
-      {
-        subjectCode: "IF301",
-        subjectName: "Pemrograman Lanjut",
-        roomType: "Teori",
-      },
-      {
-        subjectCode: "IF302",
-        subjectName: "Praktikum Pemrograman Lanjut",
-        roomType: "Lab Komputer",
-      },
-      {
-        subjectCode: "KU110",
-        subjectName: "Statistika",
-        roomType: "Teori",
-      },
-      {
-        subjectCode: "SI302",
-        subjectName: "Manajemen Proyek Sistem Informasi",
-        roomType: "Teori",
-      }
-    ]
+  { subjectCode: "TAX001", subjectName: "Tax Management/Tax Regulations", roomType: "Teori", tandem: true },
+  { subjectCode: "STA002", subjectName: "Statistics (Project)", roomType: "Teori", tandem: true },
+  { subjectCode: "ACC003", subjectName: "Accounting Theory", roomType: "Teori", tandem: false },
+  { subjectCode: "REL004", subjectName: "Religion", roomType: "Teori", tandem: false },
+  { subjectCode: "PAN005", subjectName: "Pancasila", roomType: "Teori", tandem: false },
+  { subjectCode: "CIT006", subjectName: "Citizenship", roomType: "Teori", tandem: false },
+  { subjectCode: "IND007", subjectName: "Indonesian Language", roomType: "Teori", tandem: false },
+  { subjectCode: "MAN008", subjectName: "Mandarin 2", roomType: "Teori", tandem: false },
+  { subjectCode: "ADV009", subjectName: "Advanced Manufacturing and Sustainable Industry", roomType: "Teori", tandem: false },
+  { subjectCode: "MEC010", subjectName: "Mechatronics and Robotics", roomType: "Teori", tandem: false },
+  { subjectCode: "DES011", subjectName: "Destructive and Non-destructive Testing", roomType: "Teori", tandem: false },
+  { subjectCode: "BIG012", subjectName: "Big Data Analytics", roomType: "Lab Komputer", tandem: true },
+  { subjectCode: "UBI013", subjectName: "Ubiquitous Computing", roomType: "Teori", tandem: false },
+  { subjectCode: "ITF014", subjectName: "IT Forensic", roomType: "Teori", tandem: false },
+  { subjectCode: "CON015", subjectName: "Convergence News Media Presenting", roomType: "Lab Komputer", tandem: false },
+  { subjectCode: "MAR016", subjectName: "Marketing Communication", roomType: "Teori", tandem: true },
+  { subjectCode: "MED017", subjectName: "Media and Society", roomType: "Teori", tandem: false },
+  { subjectCode: "CON018", subjectName: "Content Creation", roomType: "Lab Komputer", tandem: true },
+  { subjectCode: "BUS019", subjectName: "Business in World Politics", roomType: "Teori", tandem: true },
+  { subjectCode: "USF020", subjectName: "US Foreign Policy", roomType: "Teori", tandem: false },
+  { subjectCode: "GLO021", subjectName: "Global Media, Conflict, and Peace", roomType: "Teori", tandem: false },
+  { subjectCode: "FUZ022", subjectName: "Fuzzy Logic and Neural Network", roomType: "Teori", tandem: false },
+  { subjectCode: "ENG023", subjectName: "Engineering Economics and Project Management", roomType: "Teori", tandem: true },
+  { subjectCode: "ENV024", subjectName: "Environmental Impact Assesment", roomType: "Teori", tandem: true },
+  { subjectCode: "PRO025", subjectName: "Professional English", roomType: "Teori", tandem: false },
+  { subjectCode: "ACC026", subjectName: "Accuracy Development", roomType: "Teori", tandem: false },
+  { subjectCode: "MAN027", subjectName: "Managerial Accounting", roomType: "Teori", tandem: true },
+  { subjectCode: "BUS028", subjectName: "Business Communication", roomType: "Teori", tandem: false },
+  { subjectCode: "SUP029", subjectName: "Supply and Sales Project", roomType: "Teori", tandem: false },
+  { subjectCode: "MAN030", subjectName: "Manufacture Resource Planning Project", roomType: "Teori", tandem: false },
+  { subjectCode: "INV031", subjectName: "Inventory and Asset Management Project", roomType: "Teori", tandem: false },
+  { subjectCode: "POD032", subjectName: "Podcasting", roomType: "Teori", tandem: false },
+  { subjectCode: "MED033", subjectName: "Media Theory", roomType: "Teori", tandem: true },
+  { subjectCode: "ELE034", subjectName: "Electrical Engineering Project Design-1 (Capstone Design-1)", roomType: "Lab Komputer", tandem: false },
+  { subjectCode: "ECO035", subjectName: "Eco-Industrial Park Development", roomType: "Lab Komputer", tandem: false },
+  { subjectCode: "ENV036", subjectName: "Environmental Valuation and Feasibility", roomType: "Lab Komputer", tandem: true },
+  { subjectCode: "SCI037", subjectName: "Scientific Methods for Environmental Management", roomType: "Teori", tandem: true },
+  { subjectCode: "SUP038", subjectName: "Supply Chain Management", roomType: "Teori", tandem: true },
+  { subjectCode: "ORG039", subjectName: "Organizational Behavior", roomType: "Teori", tandem: true },
+  { subjectCode: "DAT040", subjectName: "Data Analytics", roomType: "Teori", tandem: true },
+  { subjectCode: "IND041", subjectName: "Industrial Ecology", roomType: "Lab Komputer", tandem: false },
+  { subjectCode: "PRO042", subjectName: "Probability Theory", roomType: "Teori", tandem: false },
+  { subjectCode: "RES043", subjectName: "Research Methodology", roomType: "Teori", tandem: false },
+  { subjectCode: "ELE044", subjectName: "Electrical Engineering Project Design-2 (Capstone Design-2)", roomType: "Teori", tandem: false },
+  { subjectCode: "RES045", subjectName: "Research Paper Writing", roomType: "Teori", tandem: false },
+  { subjectCode: "INS046", subjectName: "Insurance Law", roomType: "Teori", tandem: true },
+  { subjectCode: "LAW047", subjectName: "Lawtech Startup: Funding and Management", roomType: "Teori", tandem: false },
+  { subjectCode: "POS048", subjectName: "Postgraduate Degrees in Law and Other Subjects", roomType: "Teori", tandem: false },
+  { subjectCode: "BUS049", subjectName: "Business and Academic Writing (Project)", roomType: "Teori", tandem: false },
+  { subjectCode: "INT050", subjectName: "International Business", roomType: "Lab Komputer", tandem: true },
+  { subjectCode: "FEA051", subjectName: "Feasibility Study", roomType: "Teori", tandem: false },
+  { subjectCode: "MAN052", subjectName: "Managerial Finance", roomType: "Teori", tandem: false },
+  { subjectCode: "DIG053", subjectName: "Digital Transformation and Data Science", roomType: "Lab Komputer", tandem: false },
+  { subjectCode: "MAS054", subjectName: "Master&apos;s Final Project Proposal", roomType: "Teori", tandem: true },
+  { subjectCode: "INT055", subjectName: "International Finance", roomType: "Teori", tandem: true },
+  { subjectCode: "GLO056", subjectName: "Global Supply Chain Management", roomType: "Lab Komputer", tandem: true },
+  { subjectCode: "MAR057", subjectName: "Marketing for Entrepreneur", roomType: "Teori", tandem: false },
+  { subjectCode: "SEL058", subjectName: "Selected Topics in Marketing", roomType: "Teori", tandem: true },
+  { subjectCode: "TEC059", subjectName: "Technopreneurship and Family Business", roomType: "Teori", tandem: false },
+  { subjectCode: "NEW060", subjectName: "New Product and Business Model Innovation Strategy", roomType: "Teori", tandem: false },
+  { subjectCode: "COM061", subjectName: "Computer Simulation", roomType: "Teori", tandem: true },
+  { subjectCode: "CAP062", subjectName: "Capstone Design", roomType: "Teori", tandem: true },
+  { subjectCode: "COR063", subjectName: "Corporate Contract Drafting", roomType: "Teori", tandem: true },
+  { subjectCode: "LAW064", subjectName: "Law and Major Corporate Projects", roomType: "Teori", tandem: false },
+  { subjectCode: "THE065", subjectName: "The Development of Law Firms in Indonesia and Singapore", roomType: "Teori", tandem: false },
+  { subjectCode: "CAS066", subjectName: "Cases in International Climate Change Law", roomType: "Teori", tandem: true },
+  { subjectCode: "POL067", subjectName: "Policy Brief Drafting", roomType: "Teori", tandem: true },
+  { subjectCode: "CAR068", subjectName: "Career in International Law", roomType: "Teori", tandem: false },
+  { subjectCode: "ACA069", subjectName: "Academic Writing", roomType: "Teori", tandem: true },
+  { subjectCode: "TIK070", subjectName: "TikTok Marketing", roomType: "Teori", tandem: true },
+  { subjectCode: "IND071", subjectName: "Industrial Hygiene", roomType: "Lab Komputer", tandem: false },
+  { subjectCode: "ENV072", subjectName: "Environmental Circular Economy", roomType: "Lab Komputer", tandem: false }
+];
 
 export const lecturer = [
-      {
-        lecturerId: "D001",
-        lecturerName: "Dr. Budi Santoso",
-        subject: ["IF101", "IF102", 'IF201'],
-        availability: ["monday", "tuesday", "wednesday"] as Day[],
-        conditions: [
-            "monday|=|morning",
-            "tuesday|=|morning"
-        ]
-      },
-      {
-        lecturerId: "D002",
-        lecturerName: "Prof. Siti Aminah",
-        subject: ["IF202", 'IF203', 'SI301'],
-        availability: ["monday", "tuesday", "thursday"] as Day[],
-        conditions: [
-            "monday|=|afternoon"
-        ]
-      },
-      {
-        lecturerId: "D003",
-        lecturerName: "Ir. Ahmad Yani",
-        subject: ['KU101'],
-        availability: ["monday", "wednesday", "friday"] as Day[],
-        conditions: [
-            "friday|=|morning"
-        ]
-      },
-      {
-        lecturerId: "D004",
-        lecturerName: "Drs. Rina Hartati",
-        subject: ['KU105'],
-        availability: ["tuesday", "thursday"] as Day[],
-        conditions: [
-            "tuesday|=|morning",
-            "thursday|=|morning"
-        ]
-      },
-      {
-        lecturerId: "D005",
-        lecturerName: "Dr. Joko Susilo",
-        subject: ['IF101', 'IF102', 'IF202'],
-        availability: ["monday", "wednesday", "friday"] as Day[],
-        conditions: [
-            "wednesday|=|morning"
-        ]
-      },
-      {
-        lecturerId: "D006",
-        lecturerName: "Dr. Lina Marlina",
-        subject: ["IF301", "IF302"],
-        availability: ["tuesday", "wednesday", "thursday"] as Day[],
-        conditions: [
-          "tuesday|=|afternoon",
-          "thursday|=|morning"
-        ],
-      },
-      {
-        lecturerId: "D007",
-        lecturerName: "Prof. Agus Santoso",
-        subject: ["KU110", "SI302"],
-        availability: ["monday", "friday"] as Day[],
-        conditions: [
-          "monday|=|morning",
-          "friday|=|afternoon"
-        ],
-      }
-    ]
+  { lecturerId: "L001", lecturerName: "Prof. Rudi", subject: ['DES011', 'ENV072', 'ACC003'], availability: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday'] as Day[], conditions: ['thursday|=|afternoon', 'wednesday|=|afternoon', 'tuesday|=|afternoon'] },
+  { lecturerId: "L002", lecturerName: "Dr. Surya", subject: ['DES011', 'INT050', 'PRO025', 'BUS019'], availability: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday'] as Day[], conditions: ['monday|=|afternoon', 'friday|=|afternoon', 'wednesday|=|evening'] },
+  { lecturerId: "L003", lecturerName: "Ms. Kira", subject: ['COM061', 'POL067', 'BUS028'], availability: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday'] as Day[], conditions: ['wednesday|=|afternoon', 'monday|=|afternoon', 'tuesday|=|morning'] },
+  { lecturerId: "L004", lecturerName: "Dr. Clara", subject: ['DIG053', 'SUP029', 'INV031'], availability: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday'] as Day[], conditions: ['tuesday|=|morning', 'wednesday|=|morning'] },
+  { lecturerId: "L005", lecturerName: "Prof. Budi", subject: ['ELE044', 'ITF014', 'ACA069'], availability: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday'] as Day[], conditions: ['wednesday|=|evening'] },
+  { lecturerId: "L006", lecturerName: "Ms. Tika", subject: ['CAP062'], availability: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday'] as Day[], conditions: [] },
+  { lecturerId: "L007", lecturerName: "Mr. Rizal", subject: ['COR063', 'THE065', 'IND071'], availability: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday'] as Day[], conditions: ['friday|=|morning', 'thursday|=|morning', 'friday|=|afternoon'] },
+  { lecturerId: "L008", lecturerName: "Dr. Sandra", subject: ['CAR068', 'SUP029'], availability: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday'] as Day[], conditions: ['tuesday|=|afternoon'] },
+  { lecturerId: "L009", lecturerName: "Dr. Hendra", subject: ['POD032'], availability: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday'] as Day[], conditions: ['wednesday|=|morning'] },
+  { lecturerId: "L010", lecturerName: "Prof. Albert", subject: ['GLO021', 'ORG039'], availability: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday'] as Day[], conditions: ['wednesday|=|morning', 'tuesday|=|afternoon'] },
+  { lecturerId: "L011", lecturerName: "Dr. Ika", subject: ['FEA051', 'NEW060'], availability: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday'] as Day[], conditions: ['monday|=|afternoon'] },
+  { lecturerId: "L012", lecturerName: "Ms. Rina", subject: ['CAP062', 'CAS066', 'PRO025'], availability: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday'] as Day[], conditions: ['thursday|=|morning', 'wednesday|=|evening'] },
+  { lecturerId: "L013", lecturerName: "Dr. Farel", subject: ['FUZ022'], availability: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday'] as Day[], conditions: [] },
+  { lecturerId: "L014", lecturerName: "Prof. Joko", subject: ['BIG012', 'POL067', 'SUP029'], availability: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday'] as Day[], conditions: [] },
+  { lecturerId: "L015", lecturerName: "Ms. Dita", subject: ['CIT006', 'TEC059'], availability: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday'] as Day[], conditions: [] },
+  { lecturerId: "L016", lecturerName: "Prof. Danu", subject: ['ADV009', 'POL067'], availability: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday'] as Day[], conditions: ['tuesday|=|morning', 'thursday|=|evening'] },
+  { lecturerId: "L017", lecturerName: "Dr. Anwar", subject: ['IND007', 'MEC010', 'USF020'], availability: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday'] as Day[], conditions: ['friday|=|morning', 'thursday|=|afternoon', 'friday|=|evening'] },
+  { lecturerId: "L018", lecturerName: "Prof. Hilda", subject: ['MAN008'], availability: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday'] as Day[], conditions: ['monday|=|afternoon'] },
+  { lecturerId: "L019", lecturerName: "Ms. Sita", subject: ['SEL058'], availability: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday'] as Day[], conditions: ['wednesday|=|evening', 'wednesday|=|afternoon'] },
+  { lecturerId: "L020", lecturerName: "Mr. Andre", subject: ['RES045'], availability: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday'] as Day[], conditions: ['friday|=|evening'] },
+  { lecturerId: "L021", lecturerName: "Dr. Yudi", subject: ['IND041'], availability: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday'] as Day[], conditions: ['thursday|=|morning'] },
+  { lecturerId: "L022", lecturerName: "Ms. Putri", subject: ['ITF014', 'MEC010', 'MED017'], availability: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday'] as Day[], conditions: [] },
+  { lecturerId: "L023", lecturerName: "Prof. Yanto", subject: ['CAS066', 'SCI037'], availability: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday'] as Day[], conditions: ['tuesday|=|morning', 'wednesday|=|afternoon', 'friday|=|afternoon'] },
+  { lecturerId: "L024", lecturerName: "Dr. Anisa", subject: ['POS048'], availability: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday'] as Day[], conditions: [] },
+  { lecturerId: "L025", lecturerName: "Mr. Theo", subject: ['ENV024', 'MED033', 'SEL058'], availability: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday'] as Day[], conditions: ['wednesday|=|afternoon'] },
+  { lecturerId: "L026", lecturerName: "Prof. Abdi", subject: ['GLO056'], availability: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday'] as Day[], conditions: ['tuesday|=|evening'] },
+  { lecturerId: "L027", lecturerName: "Ms. Vina", subject: ['CAP062', 'ENV036', 'GLO056'], availability: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday'] as Day[], conditions: [] },
+  { lecturerId: "L028", lecturerName: "Dr. Yani", subject: ['COM061', 'MAR016'], availability: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday'] as Day[], conditions: [] },
+  { lecturerId: "L029", lecturerName: "Mr. Dedi", subject: ['SUP038', 'TAX001', 'TEC059'], availability: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday'] as Day[], conditions: ['thursday|=|afternoon', 'wednesday|=|evening'] },
+  { lecturerId: "L030", lecturerName: "Prof. Edi", subject: ['LAW064', 'SCI037'], availability: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday'] as Day[], conditions: ['thursday|=|afternoon', 'thursday|=|afternoon'] },
+  { lecturerId: "L031", lecturerName: "Ms. Arini", subject: ['CON018'], availability: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday'] as Day[], conditions: ['monday|=|morning', 'wednesday|=|afternoon', 'friday|=|afternoon'] },
+  { lecturerId: "L032", lecturerName: "Prof. Dewi", subject: ['BUS049', 'REL004'], availability: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday'] as Day[], conditions: ['friday|=|morning'] },
+  { lecturerId: "L033", lecturerName: "Dr. Hani", subject: ['ELE034', 'RES043'], availability: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday'] as Day[], conditions: ['wednesday|=|morning', 'thursday|=|evening', 'tuesday|=|evening'] },
+  { lecturerId: "L034", lecturerName: "Prof. Jaya", subject: ['INT055'], availability: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday'] as Day[], conditions: ['thursday|=|evening', 'monday|=|morning', 'wednesday|=|afternoon'] },
+  { lecturerId: "L035", lecturerName: "Dr. Bima", subject: ['CON015'], availability: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday'] as Day[], conditions: ['thursday|=|morning', 'friday|=|morning', 'wednesday|=|morning'] },
+  { lecturerId: "L036", lecturerName: "Ms. Lani", subject: ['MAS054'], availability: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday'] as Day[], conditions: ['friday|=|afternoon', 'tuesday|=|evening'] },
+  { lecturerId: "L037", lecturerName: "Prof. Kimi", subject: ['COM061', 'DAT040', 'MAS054'], availability: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday'] as Day[], conditions: ['wednesday|=|morning'] },
+  { lecturerId: "L038", lecturerName: "Ms. Farah", subject: ['ENG023', 'MAN030', 'SUP038'], availability: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday'] as Day[], conditions: ['monday|=|afternoon', 'wednesday|=|morning'] },
+  { lecturerId: "L039", lecturerName: "Mr. Junaid", subject: ['STA002'], availability: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday'] as Day[], conditions: ['monday|=|morning', 'thursday|=|morning', 'friday|=|evening'] },
+  { lecturerId: "L040", lecturerName: "Prof. Aida", subject: ['ECO035'], availability: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday'] as Day[], conditions: ['wednesday|=|afternoon', 'wednesday|=|evening'] },
+  { lecturerId: "L041", lecturerName: "Ms. Anita", subject: ['CAP062', 'LAW047', 'TEC059'], availability: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday'] as Day[], conditions: ['friday|=|afternoon', 'wednesday|=|afternoon', 'monday|=|afternoon'] },
+  { lecturerId: "L042", lecturerName: "Prof. Lara", subject: ['MAN052'], availability: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday'] as Day[], conditions: ['thursday|=|evening'] },
+  { lecturerId: "L043", lecturerName: "Mr. Randy", subject: ['ENV024', 'MAN027'], availability: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday'] as Day[], conditions: ['monday|=|afternoon', 'wednesday|=|evening'] },
+  { lecturerId: "L044", lecturerName: "Prof. Cinta", subject: ['SCI037', 'UBI013', 'USF020'], availability: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday'] as Day[], conditions: [] },
+  { lecturerId: "L045", lecturerName: "Dr. Faris", subject: ['ACC026', 'CAS066'], availability: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday'] as Day[], conditions: [] },
+  { lecturerId: "L046", lecturerName: "Prof. Rina", subject: ['TIK070', 'UBI013'], availability: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday'] as Day[], conditions: [] },
+  { lecturerId: "L047", lecturerName: "Dr. Ayu", subject: ['INS046', 'LAW064'], availability: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday'] as Day[], conditions: ['friday|=|evening', 'friday|=|morning', 'monday|=|evening'] },
+  { lecturerId: "L048", lecturerName: "Prof. Tia", subject: ['MAR057', 'PRO025'], availability: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday'] as Day[], conditions: [] },
+  { lecturerId: "L049", lecturerName: "Dr. Dewi", subject: ['LAW064', 'PAN005'], availability: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday'] as Day[], conditions: [] },
+  { lecturerId: "L050", lecturerName: "Mr. Zaki", subject: ['NEW060', 'PRO042'], availability: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday'] as Day[], conditions: ['wednesday|=|evening', 'monday|=|morning'] }
+];
 
 export const room = [
-      {
-        roomCode: "R301",
-        roomName: "Ruang Teori 301",
-        capacity: 50,
-        roomType: "Teori",
-        facility: ["Proyektor", "AC"],
-      },
-      {
-        roomCode: "R302",
-        roomName: "Ruang Teori 302",
-        capacity: 50,
-        roomType: "Teori",
-        facility: ["Proyektor", "AC"],
-      },
-      {
-        roomCode: "R405",
-        roomName: "Ruang Teori 405",
-        capacity: 40,
-        roomType: "Teori",
-        facility: ["Proyektor"],
-      },
-      {
-        roomCode: "LAB-A",
-        roomName: "Lab Komputer A",
-        capacity: 30,
-        roomType: "Lab Komputer",
-        facility: ["Proyektor", "AC", "Komputer"],
-      },
-      {
-        roomCode: "LAB-B",
-        roomName: "Lab Komputer B",
-        capacity: 30,
-        roomType: "Lab Komputer",
-        facility: ["Proyektor", "Komputer"],
-      }
-    ]
+  { roomCode: "T1-1", roomName: "Theory Room L1-1", capacity: 80, roomType: "Teori", facility: ['Projector', 'Whiteboard', 'AC'] },
+  { roomCode: "T1-2", roomName: "Theory Room L1-2", capacity: 80, roomType: "Teori", facility: ['Projector', 'Whiteboard', 'AC'] },
+  { roomCode: "T1-3", roomName: "Theory Room L1-3", capacity: 80, roomType: "Teori", facility: ['Projector', 'Whiteboard', 'AC'] },
+  { roomCode: "T1-4", roomName: "Theory Room L1-4", capacity: 80, roomType: "Teori", facility: ['Projector', 'Whiteboard', 'AC'] },
+  { roomCode: "T2-1", roomName: "Theory Room L2-1", capacity: 40, roomType: "Teori", facility: ['Projector', 'Whiteboard', 'AC'] },
+  { roomCode: "T2-2", roomName: "Theory Room L2-2", capacity: 40, roomType: "Teori", facility: ['Projector', 'Whiteboard', 'AC'] },
+  { roomCode: "T2-3", roomName: "Theory Room L2-3", capacity: 40, roomType: "Teori", facility: ['Projector', 'Whiteboard', 'AC'] },
+  { roomCode: "T2-4", roomName: "Theory Room L2-4", capacity: 40, roomType: "Teori", facility: ['Projector', 'Whiteboard', 'AC'] },
+  { roomCode: "T2-5", roomName: "Theory Room L2-5", capacity: 40, roomType: "Teori", facility: ['Projector', 'Whiteboard', 'AC'] },
+  { roomCode: "T2-6", roomName: "Theory Room L2-6", capacity: 40, roomType: "Teori", facility: ['Projector', 'Whiteboard', 'AC'] },
+  { roomCode: "T2-7", roomName: "Theory Room L2-7", capacity: 40, roomType: "Teori", facility: ['Projector', 'Whiteboard', 'AC'] },
+  { roomCode: "T2-8", roomName: "Theory Room L2-8", capacity: 40, roomType: "Teori", facility: ['Projector', 'Whiteboard', 'AC'] },
+  { roomCode: "T3-1", roomName: "Theory Room L3-1", capacity: 40, roomType: "Teori", facility: ['Projector', 'Whiteboard', 'AC'] },
+  { roomCode: "T3-2", roomName: "Theory Room L3-2", capacity: 40, roomType: "Teori", facility: ['Projector', 'Whiteboard', 'AC'] },
+  { roomCode: "T3-3", roomName: "Theory Room L3-3", capacity: 40, roomType: "Teori", facility: ['Projector', 'Whiteboard', 'AC'] },
+  { roomCode: "T3-4", roomName: "Theory Room L3-4", capacity: 40, roomType: "Teori", facility: ['Projector', 'Whiteboard', 'AC'] },
+  { roomCode: "T3-5", roomName: "Theory Room L3-5", capacity: 40, roomType: "Teori", facility: ['Projector', 'Whiteboard', 'AC'] },
+  { roomCode: "T3-6", roomName: "Theory Room L3-6", capacity: 40, roomType: "Teori", facility: ['Projector', 'Whiteboard', 'AC'] },
+  { roomCode: "T3-7", roomName: "Theory Room L3-7", capacity: 40, roomType: "Teori", facility: ['Projector', 'Whiteboard', 'AC'] },
+  { roomCode: "T3-8", roomName: "Theory Room L3-8", capacity: 40, roomType: "Teori", facility: ['Projector', 'Whiteboard', 'AC'] },
+  { roomCode: "T4-1", roomName: "Theory Room L4-1", capacity: 40, roomType: "Teori", facility: ['Projector', 'Whiteboard', 'AC'] },
+  { roomCode: "T4-2", roomName: "Theory Room L4-2", capacity: 40, roomType: "Teori", facility: ['Projector', 'Whiteboard', 'AC'] },
+  { roomCode: "T4-3", roomName: "Theory Room L4-3", capacity: 40, roomType: "Teori", facility: ['Projector', 'Whiteboard', 'AC'] },
+  { roomCode: "T4-4", roomName: "Theory Room L4-4", capacity: 40, roomType: "Teori", facility: ['Projector', 'Whiteboard', 'AC'] },
+  { roomCode: "T4-5", roomName: "Theory Room L4-5", capacity: 40, roomType: "Teori", facility: ['Projector', 'Whiteboard', 'AC'] },
+  { roomCode: "T4-6", roomName: "Theory Room L4-6", capacity: 40, roomType: "Teori", facility: ['Projector', 'Whiteboard', 'AC'] },
+  { roomCode: "T4-7", roomName: "Theory Room L4-7", capacity: 40, roomType: "Teori", facility: ['Projector', 'Whiteboard', 'AC'] },
+  { roomCode: "T4-8", roomName: "Theory Room L4-8", capacity: 40, roomType: "Teori", facility: ['Projector', 'Whiteboard', 'AC'] },
+  { roomCode: "LAB-1", roomName: "Lab Komputer 1", capacity: 40, roomType: "Lab Komputer", facility: ['Computers', 'Projector', 'AC', 'LAN'] },
+  { roomCode: "LAB-2", roomName: "Lab Komputer 2", capacity: 40, roomType: "Lab Komputer", facility: ['Computers', 'Projector', 'AC', 'LAN'] },
+  { roomCode: "LAB-3", roomName: "Lab Komputer 3", capacity: 40, roomType: "Lab Komputer", facility: ['Computers', 'Projector', 'AC', 'LAN'] },
+  { roomCode: "LAB-4", roomName: "Lab Komputer 4", capacity: 40, roomType: "Lab Komputer", facility: ['Computers', 'Projector', 'AC', 'LAN'] }
+];
 
 export const studentMajor = [
-      {
-        batchId: "IF24A",
-        batchName: "Informatika 24 A",
-        major: "Informatika",
-        batch: 2024,
-        amount: 45,
-        subjectEnroll: ['IF101', 'IF102', 'KU101', 'KU105'] 
-      },
-      {
-        batchId: "IF24B",
-        batchName: "Informatika 24 B",
-        major: "Informatika",
-        batch: 2024,
-        amount: 48,
-        subjectEnroll: ['IF101', 'IF102', 'KU101', 'KU105']
-      },
-      {
-        batchId: "IF23A",
-        batchName: "Informatika 23 A",
-        major: "Informatika",
-        batch: 2023,
-        amount: 40,
-        subjectEnroll: ['IF201', 'IF202', 'IF203']
-      },
-      {
-        batchId: "SI24A",
-        batchName: "Sistem Informasi 24A",
-        major: "Sistem Informasi",
-        batch: 2024,
-        amount: 35,
-        subjectEnroll: ['SI301', 'KU101']
-      },
-      {
-        batchId: "IF25A",
-        batchName: "Informatika 25 A",
-        major: "Informatika",
-        batch: 2025,
-        amount: 50,
-        subjectEnroll: ['IF301', 'IF302', 'KU110']
-      },
-      {
-        batchId: "SI25A",
-        batchName: "Sistem Informasi 25 A",
-        major: "Sistem Informasi",
-        batch: 2025,
-        amount: 40,
-        subjectEnroll: ['SI302', 'KU110']
-      }
-    ]
+  { batchId: "N ACC-2023 Class", batchName: "N ACC-2023 Class", major: "Accounting", batch: 2023, amount: 30, subjectEnroll: ['ACC003', 'PRO025', 'STA002', 'TAX001'] },
+  { batchId: "N ACC-2024 Class", batchName: "N ACC-2024 Class", major: "Accounting", batch: 2024, amount: 30, subjectEnroll: ['ACC026', 'CIT006', 'IND007', 'PAN005', 'REL004'] },
+  { batchId: "N BA-2023 RETAIL BUSINESS", batchName: "N BA-2023 RETAIL BUSINESS", major: "Business Administration", batch: 2023, amount: 30, subjectEnroll: ['BUS028', 'MAN008', 'MAN027', 'PRO025'] },
+  { batchId: "N BA-2024 Class", batchName: "N BA-2024 Class", major: "Business Administration", batch: 2024, amount: 30, subjectEnroll: ['ACC026', 'CIT006', 'IND007', 'PAN005', 'REL004'] },
+  { batchId: "N IR-2024 Class", batchName: "N IR-2024 Class", major: "International Relations", batch: 2024, amount: 30, subjectEnroll: ['ACC026', 'CIT006', 'IND007', 'PAN005', 'REL004'] },
+  { batchId: "N IS-2024 Class", batchName: "N IS-2024 Class", major: "Information System", batch: 2024, amount: 30, subjectEnroll: ['ACC026', 'CIT006', 'IND007', 'PAN005', 'REL004'] },
+  { batchId: "N IT-2024 Class", batchName: "N IT-2024 Class", major: "Informatics", batch: 2024, amount: 30, subjectEnroll: ['ACC026', 'CIT006', 'IND007', 'PAN005', 'REL004'] },
+  { batchId: "N ME-2023 Class", batchName: "N ME-2023 Class", major: "Mechanical Engineering", batch: 2023, amount: 30, subjectEnroll: ['ADV009', 'DES011', 'MEC010', 'PRO025'] },
+  { batchId: "N ME-2024 Class", batchName: "N ME-2024 Class", major: "Mechanical Engineering", batch: 2024, amount: 30, subjectEnroll: ['ACC026', 'CIT006', 'IND007', 'PAN005', 'REL004'] },
+  { batchId: "N S2IT-2024 BATCH 2", batchName: "N S2IT-2024 BATCH 2", major: "Informatics", batch: 2024, amount: 30, subjectEnroll: ['BIG012', 'ITF014', 'RES045', 'UBI013'] },
+  { batchId: "N COMM-2024 Class", batchName: "N COMM-2024 Class", major: "Communication Science", batch: 2024, amount: 30, subjectEnroll: ['ACC026', 'CIT006', 'IND007', 'PAN005', 'REL004'] },
+  { batchId: "N COMM-2023 FILM & MEDIA STUDIES", batchName: "N COMM-2023 FILM & MEDIA STUDIES", major: "Communication Science", batch: 2023, amount: 30, subjectEnroll: ['CON015', 'CON018', 'POD032', 'PRO025'] },
+  { batchId: "N COMM-2023 PUBLIC RELATIONS & DIGITAL COMMUNICATIONS CLASS", batchName: "N COMM-2023 PUBLIC RELATIONS & DIGITAL COMMUNICATIONS CLASS", major: "Communication Science", batch: 2023, amount: 30, subjectEnroll: ['MAR016', 'MED017', 'MED033', 'PRO025'] },
+  { batchId: "N IR-2023 Class", batchName: "N IR-2023 Class", major: "International Relations", batch: 2023, amount: 30, subjectEnroll: ['BUS019', 'GLO021', 'PRO025', 'USF020'] },
+  { batchId: "N EE-2023 Control System", batchName: "N EE-2023 Control System", major: "Electrical Engineering", batch: 2023, amount: 30, subjectEnroll: ['ELE034', 'ENG023', 'FUZ022', 'PRO025'] },
+  { batchId: "N EE-2024 Class", batchName: "N EE-2024 Class", major: "Electrical Engineering", batch: 2024, amount: 30, subjectEnroll: ['ACC026', 'CIT006', 'IND007', 'PAN005', 'REL004'] },
+  { batchId: "N ENV-2024 Class", batchName: "N ENV-2024 Class", major: "Environmental Engineering", batch: 2024, amount: 30, subjectEnroll: ['ACC026', 'CIT006', 'ENV024', 'IND007', 'PAN005', 'REL004'] },
+  { batchId: "N IS-2023 ERP Class", batchName: "N IS-2023 ERP Class", major: "Information System", batch: 2023, amount: 30, subjectEnroll: ['INV031', 'MAN030', 'PRO025', 'SUP029'] },
+  { batchId: "N ENV-2023 Class", batchName: "N ENV-2023 Class", major: "Environmental Engineering", batch: 2023, amount: 30, subjectEnroll: ['ECO035', 'ENV036', 'PRO025', 'SCI037'] },
+  { batchId: "N IE-2023 Class 1", batchName: "N IE-2023 Class 1", major: "Industrial Engineering", batch: 2023, amount: 30, subjectEnroll: ['DAT040', 'IND041', 'ORG039', 'PRO025', 'SUP038'] },
+  { batchId: "N IE-2023 Class 2", batchName: "N IE-2023 Class 2", major: "Industrial Engineering", batch: 2023, amount: 30, subjectEnroll: ['DAT040', 'IND041', 'ORG039', 'PRO025', 'SUP038'] },
+  { batchId: "N IE-2024 Class 1", batchName: "N IE-2024 Class 1", major: "Industrial Engineering", batch: 2024, amount: 30, subjectEnroll: ['ACC026', 'CIT006', 'PAN005', 'PRO042', 'REL004'] },
+  { batchId: "N IE-2024 Class 2", batchName: "N IE-2024 Class 2", major: "Industrial Engineering", batch: 2024, amount: 30, subjectEnroll: ['ACC026', 'CIT006', 'PAN005', 'PRO042', 'REL004'] },
+  { batchId: "N IS-2022 Class", batchName: "N IS-2022 Class", major: "Information System", batch: 2022, amount: 30, subjectEnroll: ['RES043'] },
+  { batchId: "N CE-2024 Class", batchName: "N CE-2024 Class", major: "Civil Engineering", batch: 2024, amount: 30, subjectEnroll: ['ACC026', 'CIT006', 'IND007', 'PAN005', 'REL004'] },
+  { batchId: "N LAW-2024 Class", batchName: "N LAW-2024 Class", major: "Law", batch: 2024, amount: 30, subjectEnroll: ['ACC026', 'CIT006', 'IND007', 'PAN005', 'REL004'] },
+  { batchId: "N EE-2022 Class", batchName: "N EE-2022 Class", major: "Electrical Engineering", batch: 2022, amount: 30, subjectEnroll: ['ELE044'] },
+  { batchId: "N S2IT-2024 BATCH 1", batchName: "N S2IT-2024 BATCH 1", major: "Informatics", batch: 2024, amount: 30, subjectEnroll: ['RES045'] },
+  { batchId: "N S2LAW-2024 CORPORATE LAW", batchName: "N S2LAW-2024 CORPORATE LAW", major: "Magister Law", batch: 2024, amount: 30, subjectEnroll: ['COR063', 'LAW064', 'RES045', 'THE065'] },
+  { batchId: "N S2LAW-2024 INTERNATIONAL LAW", batchName: "N S2LAW-2024 INTERNATIONAL LAW", major: "Magister Law", batch: 2024, amount: 30, subjectEnroll: ['CAR068', 'CAS066', 'POL067', 'RES045'] },
+  { batchId: "N MGT-2024 Class", batchName: "N MGT-2024 Class", major: "Management", batch: 2024, amount: 30, subjectEnroll: ['ACC026', 'CIT006', 'IND007', 'PAN005', 'REL004'] },
+  { batchId: "N LAW-2023 Corporate Law", batchName: "N LAW-2023 Corporate Law", major: "Law", batch: 2023, amount: 30, subjectEnroll: ['INS046', 'LAW047', 'POS048', 'PRO025'] },
+  { batchId: "N MGT-2023 DCM", batchName: "N MGT-2023 DCM", major: "Management", batch: 2023, amount: 30, subjectEnroll: ['BUS049', 'FEA051', 'INT050', 'PRO025', 'TIK070'] },
+  { batchId: "N MGT-2023 HCM", batchName: "N MGT-2023 HCM", major: "Management", batch: 2023, amount: 30, subjectEnroll: ['BUS049', 'FEA051', 'INT050', 'PRO025', 'TIK070'] },
+  { batchId: "N S2MTek-2024 Batch 13_Class A", batchName: "N S2MTek-2024 Batch 13_Class A", major: "Technology Management", batch: 2024, amount: 30, subjectEnroll: ['ACA069', 'DIG053', 'MAN052', 'MAS054'] },
+  { batchId: "N S2MTek-2024 Batch 13_Class B", batchName: "N S2MTek-2024 Batch 13_Class B", major: "Technology Management", batch: 2024, amount: 30, subjectEnroll: ['ACA069', 'DIG053', 'MAN052', 'MAS054'] },
+  { batchId: "N S2MTek-2024 Batch 12 - Finance", batchName: "N S2MTek-2024 Batch 12 - Finance", major: "Technology Management", batch: 2024, amount: 30, subjectEnroll: ['INT055', 'RES045'] },
+  { batchId: "N S2MTek-2024 Batch 12 - Operation", batchName: "N S2MTek-2024 Batch 12 - Operation", major: "Technology Management", batch: 2024, amount: 30, subjectEnroll: ['GLO056', 'RES045'] },
+  { batchId: "N S2MTek-2024 Batch 12 - Marketing", batchName: "N S2MTek-2024 Batch 12 - Marketing", major: "Technology Management", batch: 2024, amount: 30, subjectEnroll: ['MAR057', 'RES045', 'SEL058'] },
+  { batchId: "N S2MTek-2024 Batch 12 - Entrepreneurship", batchName: "N S2MTek-2024 Batch 12 - Entrepreneurship", major: "Technology Management", batch: 2024, amount: 30, subjectEnroll: ['NEW060', 'RES045', 'TEC059'] },
+  { batchId: "N IE-2022 Class 1", batchName: "N IE-2022 Class 1", major: "Industrial Engineering", batch: 2022, amount: 30, subjectEnroll: ['COM061'] },
+  { batchId: "N IE-2022 Class 2", batchName: "N IE-2022 Class 2", major: "Industrial Engineering", batch: 2022, amount: 30, subjectEnroll: ['COM061'] },
+  { batchId: "N ME-2022 Class", batchName: "N ME-2022 Class", major: "Mechanical Engineering", batch: 2022, amount: 30, subjectEnroll: ['CAP062'] },
+  { batchId: "N ENV Final Project By Course 1", batchName: "N ENV Final Project By Course 1", major: "Environmental Engineering", batch: 2023, amount: 30, subjectEnroll: ['IND071'] },
+  { batchId: "N ENV Final Project By Course 2", batchName: "N ENV Final Project By Course 2", major: "Environmental Engineering", batch: 2023, amount: 30, subjectEnroll: ['ENV072'] },
+  { batchId: "N MEN Final Project By Course 1", batchName: "N MEN Final Project By Course 1", major: "Mechanical Engineering", batch: 2023, amount: 30, subjectEnroll: ['IND071'] },
+  { batchId: "N MEN Final Project By Course 2", batchName: "N MEN Final Project By Course 2", major: "Mechanical Engineering", batch: 2023, amount: 30, subjectEnroll: ['ENV072'] },
+  { batchId: "N EEN Final Project By Course 1", batchName: "N EEN Final Project By Course 1", major: "Electrical Engineering", batch: 2023, amount: 30, subjectEnroll: ['IND071'] },
+  { batchId: "N EEN Final Project By Course 2", batchName: "N EEN Final Project By Course 2", major: "Electrical Engineering", batch: 2023, amount: 30, subjectEnroll: ['ENV072'] }
+];

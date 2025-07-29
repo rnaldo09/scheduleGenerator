@@ -1,13 +1,3 @@
-export type timeRequirementType = {
-        day: string[],
-        classDuration: number,
-        breakDuration: number,
-        startTime: string,
-        endTime: string,
-        conditions?: string[]
-        maxCoursesPerDay: number
-    }
-
 export type Day =
   | "monday"
   | "tuesday"
@@ -17,10 +7,20 @@ export type Day =
   | "saturday"
   | "sunday";
 
+export type timeRequirementType = {
+    day: Day[],
+    classDuration: number,
+    breakDuration: number,
+    startTime: string,
+    endTime: string,
+    conditions?: string[]
+    maxCoursesPerDay: number
+}
 export interface Subject {
   subjectCode: string;
   subjectName: string;
   roomType: string;
+  tandem: boolean;
 }
 
 export interface Lecturer {

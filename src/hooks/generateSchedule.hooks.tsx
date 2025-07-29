@@ -18,25 +18,24 @@ export const useOptimizedSchedule = () => {
   const [roomFilter, setRoomFilter] = useState<string | undefined>();
 
   const generateSchedule = useCallback((
-    {
-      timeReq,
-      students,
-      subjects,
-      lecturers,
-      rooms,
-    }: {
-      timeReq: timeRequirementType,
-      students: Batch[],
-      subjects: Subject[],
-      lecturers: Lecturer[],
-      rooms: Room[],
-    }
-  ) => {
+  {
+    timeReq,
+    students,
+    subjects,
+    lecturers,
+    rooms,
+  }: {
+    timeReq: timeRequirementType,
+    students: Batch[],
+    subjects: Subject[],
+    lecturers: Lecturer[],
+    rooms: Room[],
+  }) => {
     const result: ScheduleItem[] = [];
     const slotLength = timeReq.classDuration + timeReq.breakDuration;
     const start = parseTime(timeReq.startTime);
     const end = parseTime(timeReq.endTime);
-    
+
     const subjectMap = new Map(subjects.map((s) => [s.subjectCode, s]));
     const lecturerMap = new Map<string, Lecturer[]>();
     for (const l of lecturers) {
@@ -52,16 +51,15 @@ export const useOptimizedSchedule = () => {
       roomMap.get(r.roomType)!.push(r);
     }
 
-    // Slot Tracker
     const tracker = {
       lecturer: new Map<string, Set<string>>(),
       room: new Map<string, Set<string>>(),
       batch: new Map<string, Set<string>>(),
-      batchCountPerDay: new Map<string, number>(),
     };
 
     const isTaken = (map: Map<string, Set<string>>, key: string, time: string) =>
       map.get(key)?.has(time) ?? false;
+
     const occupy = (map: Map<string, Set<string>>, key: string, time: string) => {
       if (!map.has(key)) map.set(key, new Set());
       map.get(key)!.add(time);
@@ -76,6 +74,8 @@ export const useOptimizedSchedule = () => {
       }
     });
 
+    const unscheduledSubjects: { batchName: string; subjectName: string; reason: string }[] = [];
+
     for (const batch of students) {
       for (const code of batch.subjectEnroll) {
         const subject = subjectMap.get(code);
@@ -83,16 +83,31 @@ export const useOptimizedSchedule = () => {
 
         const lecturerCandidates = lecturerMap.get(code) ?? [];
         const roomCandidates = roomMap.get(subject.roomType) ?? [];
-        let scheduled = false;
+        const totalStudents = batch.amount;
+
+        const suitableRooms = roomCandidates.filter(room => room.capacity >= totalStudents);
+        if (suitableRooms.length === 0) {
+          unscheduledSubjects.push({
+            batchName: batch.batchName,
+            subjectName: subject.subjectName,
+            reason: "No suitable room found",
+          });
+          continue;
+        }
+
+        const selectedRoom = getRandomItem(suitableRooms);
 
         const allSlots: { day: Day; time: number; timeStr: string }[] = [];
         for (const day of timeReq.day) {
           for (let time = start; time + timeReq.classDuration <= end; time += slotLength) {
-            allSlots.push({ day: day as Day, time, timeStr: formatTime(time) });
+            const timeStr = formatTime(time);
+            allSlots.push({ day, time, timeStr });
           }
         }
+
         allSlots.sort((a, b) => slotLoad[a.day][a.timeStr] - slotLoad[b.day][b.timeStr]);
 
+        let scheduled = false;
         for (const slot of allSlots) {
           const { day, time, timeStr } = slot;
 
@@ -105,58 +120,43 @@ export const useOptimizedSchedule = () => {
               !isTaken(tracker.lecturer, `${d.lecturerId}|${day}`, timeStr)
           );
 
-          const availableRooms = roomCandidates.filter(
-            (r) => !isTaken(tracker.room, `${r.roomCode}|${day}`, timeStr)
-          );
+          if (availableLecturers.length < 1) continue;
+          if (isTaken(tracker.room, `${selectedRoom.roomCode}|${day}`, timeStr)) continue;
+          if (isTaken(tracker.batch, `${batch.batchId}|${day}`, timeStr)) continue;
 
-          const batchKey = `${batch.batchId}|${day}`;
-          const countKey = batchKey;
+          const lec = getRandomItem(availableLecturers);
+          occupy(tracker.lecturer, `${lec.lecturerId}|${day}`, timeStr);
+          occupy(tracker.room, `${selectedRoom.roomCode}|${day}`, timeStr);
+          occupy(tracker.batch, `${batch.batchId}|${day}`, timeStr);
 
-          const currentCount = tracker.batchCountPerDay.get(countKey) ?? 0;
-          
-          if (currentCount >= timeReq.maxCoursesPerDay || isTaken(tracker.batch, batchKey, timeStr)) continue;
+          result.push({
+            day,
+            startTime: timeStr,
+            endTime: formatTime(time + timeReq.classDuration),
+            subject: subject.subjectName,
+            batch: batch.batchName,
+            room: selectedRoom.roomName,
+            lecturer: lec.lecturerName,
+          });
 
-          if (availableLecturers.length && availableRooms.length) {
-            const lec = getRandomItem(availableLecturers);
-            const rm = getRandomItem(availableRooms);
-
-            result.push({
-              day,
-              startTime: timeStr,
-              endTime: formatTime(time + timeReq.classDuration),
-              subject: subject.subjectName,
-              batch: batch.batchName,
-              room: rm.roomName,
-              lecturer: lec.lecturerName,
-            });
-
-            occupy(tracker.lecturer, `${lec.lecturerId}|${day}`, timeStr);
-            occupy(tracker.room, `${rm.roomCode}|${day}`, timeStr);
-            occupy(tracker.batch, batchKey, timeStr);
-            tracker.batchCountPerDay.set(countKey, currentCount + 1);
-
-            slotLoad[day][timeStr] += 1;
-            scheduled = true;
-            break;
-          }
+          slotLoad[day][timeStr] += 1;
+          scheduled = true;
+          break;
         }
 
         if (!scheduled) {
-          result.push({
-            day: "N/A",
-            startTime: "N/A",
-            endTime: "N/A",
-            subject: subject.subjectName,
-            batch: batch.batchName,
-            room: "No room",
-            lecturer: "No lecturer",
+          unscheduledSubjects.push({
+            batchName: batch.batchName,
+            subjectName: subject.subjectName,
+            reason: "No available slot or lecturer",
           });
         }
       }
     }
 
-    return result;
+    return { scheduledResults: result, unscheduledSubjects };
   }, []);
+
 
   // Filter Function
   const filteredSchedule = useMemo(() => {
@@ -192,7 +192,18 @@ export const useOptimizedSchedule = () => {
   }, [schedule]);
 
   const days: string[] = ["monday", "tuesday", "wednesday", "thursday", "friday"];
-  const colors = ["#ffd6d6", "#d6ffd9", "#d6eaff", "#f9f5d6", "#e7d6ff", "#ffe6d6"];
+  const colors = [
+    "#ffd6d6", "#d6ffd9", "#d6eaff", "#f9f5d6", "#e7d6ff", "#ffe6d6", 
+    "#ffb3b3", "#b3ffb3", "#b3d9ff", "#fff2b3", "#d9b3ff", "#ffcc99", 
+    "#ff6666", "#66ff66", "#66ccff", "#ffff66", "#cc66ff", "#ff9966", 
+    "#ff4d4d", "#4dff4d", "#4d94ff", "#ffff4d", "#944dff", "#ff7a7a", 
+    "#7aff7a", "#7ab3ff", "#ffb84d", "#b34dff", "#ff6666", "#66ff99", 
+    "#66b3ff", "#ffff99", "#b366ff", "#ffcc66", "#ff3366", "#66ffcc", 
+    "#6699ff", "#ffff33", "#9966ff", "#ff9933", "#33ff66", "#33b3ff", 
+    "#ffff00", "#9900ff", "#ff6600", "#00ff66", "#0066ff", "#ccff00", 
+    "#9933ff", "#ff0033", "#33ff33", "#0099ff", "#ff6633", "#ff00cc"
+  ];
+
 
   const batchColors = useMemo(() => {
     const uniqueBatches = Array.from(new Set(schedule.map((s) => s.batch)));

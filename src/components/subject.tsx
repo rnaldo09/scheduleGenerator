@@ -1,4 +1,4 @@
-import { Form, Input, Select, Button, Table, Row, Col } from "antd";
+import { Form, Input, Select, Button, Table, Row, Col, Switch } from "antd";
 
 const { Option } = Select;
 
@@ -13,41 +13,45 @@ export const StepSubjects = ({ subjectForm, addSubject, subjects, roomTypes }: a
       }}
     >
       <Row gutter={16}>
-        <Col span={8}>
+        <Col span={6}>
           <Form.Item 
             name="subjectCode" 
             label="Subject Code" 
             rules={[{ required: true }]}
           > 
-            <Input
-              placeholder="Input subject code" 
-            /> 
+            <Input placeholder="Input subject code" /> 
           </Form.Item>
         </Col>
-        <Col span={8}>
+        <Col span={6}>
           <Form.Item 
             name="subjectName" 
             label="Subject Name" 
             rules={[{ required: true }]}
           > 
-            <Input
-              placeholder="Input subject name" 
-            /> 
+            <Input placeholder="Input subject name" /> 
           </Form.Item>
         </Col>
-        <Col span={8}>
+        <Col span={6}>
           <Form.Item 
             name="roomType" 
             label="Room Type" 
             rules={[{ required: true }]}
           > 
-            <Select
-              placeholder="Select room type"
-            > 
-              {roomTypes.map(
-                (rt: string) => (<Option key={rt} value={rt}>{rt}</Option>)
-              )} 
+            <Select placeholder="Select room type">
+              {roomTypes.map((rt: string) => (
+                <Option key={rt} value={rt}>{rt}</Option>
+              ))} 
             </Select> 
+          </Form.Item>
+        </Col>
+        <Col span={6}>
+          <Form.Item 
+            name="tandem" 
+            label="Tandem" 
+            valuePropName="checked"  // penting untuk Switch
+            initialValue={false}
+          >
+            <Switch />
           </Form.Item>
         </Col>
       </Row>
@@ -67,6 +71,11 @@ export const StepSubjects = ({ subjectForm, addSubject, subjects, roomTypes }: a
         { title: "Subject Code", dataIndex: "subjectCode" },
         { title: "Subject Name", dataIndex: "subjectName" },
         { title: "Room Type", dataIndex: "roomType" },
+        { 
+          title: "Tandem", 
+          dataIndex: "tandem",
+          render: (val: boolean) => (val ? "Yes" : "No")
+        }
       ]}
       pagination={false}
       style={{ marginTop: 16 }}
