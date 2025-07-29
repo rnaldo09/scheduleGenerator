@@ -74,6 +74,7 @@ export const useOptimizedSchedule = () => {
       }
     });
 
+    const batchDayCount = new Map<string, Record<Day, number>>();
     const unscheduledSubjects: { batchName: string; subjectName: string; reason: string }[] = [];
 
     for (const batch of students) {
@@ -95,8 +96,6 @@ export const useOptimizedSchedule = () => {
           continue;
         }
 
-        const selectedRoom = getRandomItem(suitableRooms);
-
         const allSlots: { day: Day; time: number; timeStr: string }[] = [];
         for (const day of timeReq.day) {
           for (let time = start; time + timeReq.classDuration <= end; time += slotLength) {
@@ -105,12 +104,20 @@ export const useOptimizedSchedule = () => {
           }
         }
 
-        allSlots.sort((a, b) => slotLoad[a.day][a.timeStr] - slotLoad[b.day][b.timeStr]);
+        // Prioritaskan hari dengan kelas lebih sedikit untuk batch ini
+        allSlots.sort((a, b) => {
+          const aCount = batchDayCount.get(batch.batchId)?.[a.day] ?? 0;
+          const bCount = batchDayCount.get(batch.batchId)?.[b.day] ?? 0;
+          if (aCount !== bCount) return aCount - bCount;
+          return slotLoad[a.day][a.timeStr] - slotLoad[b.day][b.timeStr];
+        });
 
         let scheduled = false;
         for (const slot of allSlots) {
           const { day, time, timeStr } = slot;
 
+          const currentDayCount = batchDayCount.get(batch.batchId)?.[day] ?? 0;
+          if (currentDayCount >= timeReq.maxCoursesPerDay) continue;
           if (!isSlotValid(timeReq.conditions ?? [], day, timeStr)) continue;
 
           const availableLecturers = lecturerCandidates.filter(
@@ -121,6 +128,9 @@ export const useOptimizedSchedule = () => {
           );
 
           if (availableLecturers.length < 1) continue;
+
+          // Pilih ruangan secara acak dari yang cocok
+          const selectedRoom = getRandomItem(suitableRooms);
           if (isTaken(tracker.room, `${selectedRoom.roomCode}|${day}`, timeStr)) continue;
           if (isTaken(tracker.batch, `${batch.batchId}|${day}`, timeStr)) continue;
 
@@ -128,6 +138,12 @@ export const useOptimizedSchedule = () => {
           occupy(tracker.lecturer, `${lec.lecturerId}|${day}`, timeStr);
           occupy(tracker.room, `${selectedRoom.roomCode}|${day}`, timeStr);
           occupy(tracker.batch, `${batch.batchId}|${day}`, timeStr);
+
+          if (!batchDayCount.has(batch.batchId)) {
+            batchDayCount.set(batch.batchId, {} as Record<Day, number>);
+          }
+          batchDayCount.get(batch.batchId)![day] =
+            (batchDayCount.get(batch.batchId)![day] ?? 0) + 1;
 
           result.push({
             day,
@@ -156,7 +172,6 @@ export const useOptimizedSchedule = () => {
 
     return { scheduledResults: result, unscheduledSubjects };
   }, []);
-
 
   // Filter Function
   const filteredSchedule = useMemo(() => {
