@@ -11,3 +11,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.ant-tooltip-inner {
+  background-color: #fff !important;  /* Change background color to green */
+  color: white !important;  /* Optional: set text color to white */
+}
