@@ -280,9 +280,9 @@ export const useOptimizedSchedule = () => {
     })),
   ], []);
 
-  const batchOptions = Array.from(new Set(schedule.map((s) => s.batch)));
-  const lecturerOptions = Array.from(new Set(schedule.map((s) => s.lecturer)));
-  const roomOptions = Array.from(new Set(schedule.map((s) => s.room)));
+  const batchOptions = Array.from(new Set(schedule.map((s) => s.batch))).sort();
+  const lecturerOptions = Array.from(new Set(schedule.map((s) => s.lecturer))).sort();
+  const roomOptions = Array.from(new Set(schedule.map((s) => s.room))).sort();
 
   return {
     schedule,

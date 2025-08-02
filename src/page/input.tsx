@@ -91,22 +91,22 @@ export const StepMasterData: React.FC = () => {
   ];
 
   const handleFinish = () => {
-    // const generated = generateSchedule({
-    //   rooms,
-    //   subjects,
-    //   lecturers,
-    //   students: batches,
-    //   timeReq: timeRequirement,
-    // });
+    const generated = generateSchedule({
+      rooms,
+      subjects,
+      lecturers,
+      students: batches,
+      timeReq: timeRequirement,
+    });
 
     // Data Mock
-    const generated = generateSchedule({
-      rooms: room,
-      subjects: classSubject,
-      lecturers: lecturer,
-      students: studentMajor,
-      timeReq: timeReq,
-    });
+    // const generated = generateSchedule({
+    //   rooms: room,
+    //   subjects: classSubject,
+    //   lecturers: lecturer,
+    //   students: studentMajor,
+    //   timeReq: timeReq,
+    // });
     console.log("Gak bisa: ", generated.unscheduledSubjects)
     console.log("Bisa: ", generated.scheduledResults)
     setSchedule(generated.scheduledResults);
