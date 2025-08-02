@@ -17,6 +17,7 @@ export type timeRequirementType = {
     maxCoursesPerDay: number
 }
 export interface Subject {
+  id: string;
   subjectCode: string;
   subjectName: string;
   roomType: string;
@@ -24,6 +25,7 @@ export interface Subject {
 }
 
 export interface Lecturer {
+  id: string;
   lecturerId: string;
   lecturerName: string;
   subject: string[];
@@ -32,6 +34,7 @@ export interface Lecturer {
 }
 
 export interface Room {
+  id: string;
   roomCode: string;
   roomName: string;
   capacity: number;
@@ -40,6 +43,7 @@ export interface Room {
 }
 
 export interface Batch {
+  id: string;
   batchId: string;
   batchName: string;
   major: string;

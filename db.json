@@ -1,0 +1,1871 @@
+{
+  "classSubject": [
+    {
+      "id": "1",
+      "subjectCode": "TAX001",
+      "subjectName": "Tax Management/Tax Regulations",
+      "roomType": "Teori",
+      "tandem": true
+    },
+    {
+      "id": "2",
+      "subjectCode": "STA002",
+      "subjectName": "Statistics (Project)",
+      "roomType": "Teori",
+      "tandem": true
+    },
+    {
+      "subjectCode": "ACC003",
+      "subjectName": "Accounting Theory",
+      "roomType": "Teori",
+      "tandem": true,
+      "id": "3"
+    },
+    {
+      "id": "4",
+      "subjectCode": "REL004",
+      "subjectName": "Religion",
+      "roomType": "Teori",
+      "tandem": false
+    },
+    {
+      "id": "5",
+      "subjectCode": "PAN005",
+      "subjectName": "Pancasila",
+      "roomType": "Teori",
+      "tandem": false
+    },
+    {
+      "id": "6",
+      "subjectCode": "CIT006",
+      "subjectName": "Citizenship",
+      "roomType": "Teori",
+      "tandem": false
+    },
+    {
+      "id": "7",
+      "subjectCode": "IND007",
+      "subjectName": "Indonesian Language",
+      "roomType": "Teori",
+      "tandem": false
+    },
+    {
+      "id": "8",
+      "subjectCode": "MAN008",
+      "subjectName": "Mandarin 2",
+      "roomType": "Teori",
+      "tandem": false
+    },
+    {
+      "id": "9",
+      "subjectCode": "ADV009",
+      "subjectName": "Advanced Manufacturing and Sustainable Industry",
+      "roomType": "Teori",
+      "tandem": false
+    },
+    {
+      "id": "10",
+      "subjectCode": "MEC010",
+      "subjectName": "Mechatronics and Robotics",
+      "roomType": "Teori",
+      "tandem": false
+    },
+    {
+      "id": "11",
+      "subjectCode": "DES011",
+      "subjectName": "Destructive and Non-destructive Testing",
+      "roomType": "Teori",
+      "tandem": false
+    },
+    {
+      "id": "12",
+      "subjectCode": "BIG012",
+      "subjectName": "Big Data Analytics",
+      "roomType": "Lab Komputer",
+      "tandem": true
+    },
+    {
+      "id": "13",
+      "subjectCode": "UBI013",
+      "subjectName": "Ubiquitous Computing",
+      "roomType": "Teori",
+      "tandem": false
+    },
+    {
+      "id": "14",
+      "subjectCode": "ITF014",
+      "subjectName": "IT Forensic",
+      "roomType": "Teori",
+      "tandem": false
+    },
+    {
+      "id": "15",
+      "subjectCode": "CON015",
+      "subjectName": "Convergence News Media Presenting",
+      "roomType": "Lab Komputer",
+      "tandem": false
+    },
+    {
+      "id": "16",
+      "subjectCode": "MAR016",
+      "subjectName": "Marketing Communication",
+      "roomType": "Teori",
+      "tandem": true
+    },
+    {
+      "id": "17",
+      "subjectCode": "MED017",
+      "subjectName": "Media and Society",
+      "roomType": "Teori",
+      "tandem": false
+    },
+    {
+      "id": "18",
+      "subjectCode": "CON018",
+      "subjectName": "Content Creation",
+      "roomType": "Lab Komputer",
+      "tandem": true
+    },
+    {
+      "id": "19",
+      "subjectCode": "BUS019",
+      "subjectName": "Business in World Politics",
+      "roomType": "Teori",
+      "tandem": true
+    },
+    {
+      "id": "20",
+      "subjectCode": "USF020",
+      "subjectName": "US Foreign Policy",
+      "roomType": "Teori",
+      "tandem": false
+    },
+    {
+      "id": "21",
+      "subjectCode": "GLO021",
+      "subjectName": "Global Media, Conflict, and Peace",
+      "roomType": "Teori",
+      "tandem": false
+    },
+    {
+      "id": "22",
+      "subjectCode": "FUZ022",
+      "subjectName": "Fuzzy Logic and Neural Network",
+      "roomType": "Teori",
+      "tandem": false
+    },
+    {
+      "id": "23",
+      "subjectCode": "ENG023",
+      "subjectName": "Engineering Economics and Project Management",
+      "roomType": "Teori",
+      "tandem": true
+    },
+    {
+      "id": "24",
+      "subjectCode": "ENV024",
+      "subjectName": "Environmental Impact Assesment",
+      "roomType": "Teori",
+      "tandem": true
+    },
+    {
+      "id": "25",
+      "subjectCode": "PRO025",
+      "subjectName": "Professional English",
+      "roomType": "Teori",
+      "tandem": false
+    },
+    {
+      "id": "26",
+      "subjectCode": "ACC026",
+      "subjectName": "Accuracy Development",
+      "roomType": "Teori",
+      "tandem": false
+    },
+    {
+      "id": "27",
+      "subjectCode": "MAN027",
+      "subjectName": "Managerial Accounting",
+      "roomType": "Teori",
+      "tandem": true
+    },
+    {
+      "id": "28",
+      "subjectCode": "BUS028",
+      "subjectName": "Business Communication",
+      "roomType": "Teori",
+      "tandem": false
+    },
+    {
+      "id": "29",
+      "subjectCode": "SUP029",
+      "subjectName": "Supply and Sales Project",
+      "roomType": "Teori",
+      "tandem": false
+    },
+    {
+      "id": "30",
+      "subjectCode": "MAN030",
+      "subjectName": "Manufacture Resource Planning Project",
+      "roomType": "Teori",
+      "tandem": false
+    },
+    {
+      "id": "31",
+      "subjectCode": "INV031",
+      "subjectName": "Inventory and Asset Management Project",
+      "roomType": "Teori",
+      "tandem": false
+    },
+    {
+      "id": "32",
+      "subjectCode": "POD032",
+      "subjectName": "Podcasting",
+      "roomType": "Teori",
+      "tandem": false
+    },
+    {
+      "id": "33",
+      "subjectCode": "MED033",
+      "subjectName": "Media Theory",
+      "roomType": "Teori",
+      "tandem": true
+    },
+    {
+      "id": "34",
+      "subjectCode": "ELE034",
+      "subjectName": "Electrical Engineering Project Design-1 (Capstone Design-1)",
+      "roomType": "Lab Komputer",
+      "tandem": false
+    },
+    {
+      "id": "35",
+      "subjectCode": "ECO035",
+      "subjectName": "Eco-Industrial Park Development",
+      "roomType": "Lab Komputer",
+      "tandem": false
+    },
+    {
+      "id": "36",
+      "subjectCode": "ENV036",
+      "subjectName": "Environmental Valuation and Feasibility",
+      "roomType": "Lab Komputer",
+      "tandem": true
+    },
+    {
+      "id": "37",
+      "subjectCode": "SCI037",
+      "subjectName": "Scientific Methods for Environmental Management",
+      "roomType": "Teori",
+      "tandem": true
+    },
+    {
+      "id": "38",
+      "subjectCode": "SUP038",
+      "subjectName": "Supply Chain Management",
+      "roomType": "Teori",
+      "tandem": true
+    },
+    {
+      "id": "39",
+      "subjectCode": "ORG039",
+      "subjectName": "Organizational Behavior",
+      "roomType": "Teori",
+      "tandem": true
+    },
+    {
+      "id": "40",
+      "subjectCode": "DAT040",
+      "subjectName": "Data Analytics",
+      "roomType": "Teori",
+      "tandem": true
+    },
+    {
+      "id": "41",
+      "subjectCode": "IND041",
+      "subjectName": "Industrial Ecology",
+      "roomType": "Lab Komputer",
+      "tandem": false
+    },
+    {
+      "id": "42",
+      "subjectCode": "PRO042",
+      "subjectName": "Probability Theory",
+      "roomType": "Teori",
+      "tandem": false
+    },
+    {
+      "id": "43",
+      "subjectCode": "RES043",
+      "subjectName": "Research Methodology",
+      "roomType": "Teori",
+      "tandem": false
+    },
+    {
+      "id": "44",
+      "subjectCode": "ELE044",
+      "subjectName": "Electrical Engineering Project Design-2 (Capstone Design-2)",
+      "roomType": "Teori",
+      "tandem": false
+    },
+    {
+      "id": "45",
+      "subjectCode": "RES045",
+      "subjectName": "Research Paper Writing",
+      "roomType": "Teori",
+      "tandem": false
+    },
+    {
+      "id": "46",
+      "subjectCode": "INS046",
+      "subjectName": "Insurance Law",
+      "roomType": "Teori",
+      "tandem": true
+    },
+    {
+      "id": "47",
+      "subjectCode": "LAW047",
+      "subjectName": "Lawtech Startup: Funding and Management",
+      "roomType": "Teori",
+      "tandem": false
+    },
+    {
+      "id": "48",
+      "subjectCode": "POS048",
+      "subjectName": "Postgraduate Degrees in Law and Other Subjects",
+      "roomType": "Teori",
+      "tandem": false
+    },
+    {
+      "id": "49",
+      "subjectCode": "BUS049",
+      "subjectName": "Business and Academic Writing (Project)",
+      "roomType": "Teori",
+      "tandem": false
+    },
+    {
+      "id": "50",
+      "subjectCode": "INT050",
+      "subjectName": "International Business",
+      "roomType": "Lab Komputer",
+      "tandem": true
+    },
+    {
+      "id": "51",
+      "subjectCode": "FEA051",
+      "subjectName": "Feasibility Study",
+      "roomType": "Teori",
+      "tandem": false
+    },
+    {
+      "id": "52",
+      "subjectCode": "MAN052",
+      "subjectName": "Managerial Finance",
+      "roomType": "Teori",
+      "tandem": false
+    },
+    {
+      "id": "53",
+      "subjectCode": "DIG053",
+      "subjectName": "Digital Transformation and Data Science",
+      "roomType": "Lab Komputer",
+      "tandem": false
+    },
+    {
+      "id": "54",
+      "subjectCode": "MAS054",
+      "subjectName": "Master's Final Project Proposal",
+      "roomType": "Teori",
+      "tandem": true
+    },
+    {
+      "id": "55",
+      "subjectCode": "INT055",
+      "subjectName": "International Finance",
+      "roomType": "Teori",
+      "tandem": true
+    },
+    {
+      "id": "56",
+      "subjectCode": "GLO056",
+      "subjectName": "Global Supply Chain Management",
+      "roomType": "Lab Komputer",
+      "tandem": true
+    },
+    {
+      "id": "57",
+      "subjectCode": "MAR057",
+      "subjectName": "Marketing for Entrepreneur",
+      "roomType": "Teori",
+      "tandem": false
+    },
+    {
+      "id": "58",
+      "subjectCode": "SEL058",
+      "subjectName": "Selected Topics in Marketing",
+      "roomType": "Teori",
+      "tandem": true
+    },
+    {
+      "id": "59",
+      "subjectCode": "TEC059",
+      "subjectName": "Technopreneurship and Family Business",
+      "roomType": "Teori",
+      "tandem": false
+    },
+    {
+      "id": "60",
+      "subjectCode": "NEW060",
+      "subjectName": "New Product and Business Model Innovation Strategy",
+      "roomType": "Teori",
+      "tandem": false
+    },
+    {
+      "id": "61",
+      "subjectCode": "COM061",
+      "subjectName": "Computer Simulation",
+      "roomType": "Teori",
+      "tandem": true
+    },
+    {
+      "id": "62",
+      "subjectCode": "CAP062",
+      "subjectName": "Capstone Design",
+      "roomType": "Teori",
+      "tandem": true
+    },
+    {
+      "id": "63",
+      "subjectCode": "COR063",
+      "subjectName": "Corporate Contract Drafting",
+      "roomType": "Teori",
+      "tandem": true
+    },
+    {
+      "id": "64",
+      "subjectCode": "LAW064",
+      "subjectName": "Law and Major Corporate Projects",
+      "roomType": "Teori",
+      "tandem": false
+    },
+    {
+      "id": "65",
+      "subjectCode": "THE065",
+      "subjectName": "The Development of Law Firms in Indonesia and Singapore",
+      "roomType": "Teori",
+      "tandem": false
+    },
+    {
+      "id": "66",
+      "subjectCode": "CAS066",
+      "subjectName": "Cases in International Climate Change Law",
+      "roomType": "Teori",
+      "tandem": true
+    },
+    {
+      "id": "67",
+      "subjectCode": "POL067",
+      "subjectName": "Policy Brief Drafting",
+      "roomType": "Teori",
+      "tandem": true
+    },
+    {
+      "id": "68",
+      "subjectCode": "CAR068",
+      "subjectName": "Career in International Law",
+      "roomType": "Teori",
+      "tandem": false
+    },
+    {
+      "id": "69",
+      "subjectCode": "ACA069",
+      "subjectName": "Academic Writing",
+      "roomType": "Teori",
+      "tandem": true
+    },
+    {
+      "id": "70",
+      "subjectCode": "TIK070",
+      "subjectName": "TikTok Marketing",
+      "roomType": "Teori",
+      "tandem": true
+    },
+    {
+      "id": "71",
+      "subjectCode": "IND071",
+      "subjectName": "Industrial Hygiene",
+      "roomType": "Lab Komputer",
+      "tandem": false
+    },
+    {
+      "id": "72",
+      "subjectCode": "ENV072",
+      "subjectName": "Environmental Circular Economy",
+      "roomType": "Lab Komputer",
+      "tandem": false
+    }
+  ],
+  "lecturer": [
+    {
+      "lecturerId": "L001",
+      "lecturerName": "Prof. Rudi",
+      "subject": [
+        "DES011",
+        "ENV072",
+        "ACC003",
+        "STA002"
+      ],
+      "availability": [
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday"
+      ],
+      "conditions": [
+        "thursday|=|afternoon",
+        "wednesday|=|afternoon",
+        "tuesday|=|afternoon"
+      ],
+      "id": "f4e6940a-52f8-4ae1-b3fa-34b6051bb6fa"
+    },
+    {
+      "lecturerId": "L002",
+      "lecturerName": "Dr. Surya",
+      "subject": [
+        "DES011",
+        "INT050",
+        "PRO025",
+        "BUS019"
+      ],
+      "availability": [
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday"
+      ],
+      "conditions": [
+        "monday|=|afternoon",
+        "friday|=|afternoon",
+        "wednesday|=|evening"
+      ],
+      "id": "ad6763e1-91cf-43b7-b5d0-8a1157eed13a"
+    },
+    {
+      "lecturerId": "L003",
+      "lecturerName": "Ms. Kira",
+      "subject": [
+        "COM061",
+        "POL067",
+        "BUS028"
+      ],
+      "availability": [
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday"
+      ],
+      "conditions": [
+        "wednesday|=|afternoon",
+        "monday|=|afternoon",
+        "tuesday|=|morning"
+      ],
+      "id": "e15263aa-dcd8-4029-b5f4-73e3e4481294"
+    },
+    {
+      "lecturerId": "L004",
+      "lecturerName": "Dr. Clara",
+      "subject": [
+        "DIG053",
+        "SUP029",
+        "INV031"
+      ],
+      "availability": [
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday"
+      ],
+      "conditions": [
+        "tuesday|=|morning",
+        "wednesday|=|morning"
+      ],
+      "id": "7dedc11c-91ac-4b12-8cc7-c6176b548f34"
+    },
+    {
+      "lecturerId": "L005",
+      "lecturerName": "Prof. Budi",
+      "subject": [
+        "ELE044",
+        "ITF014",
+        "ACA069"
+      ],
+      "availability": [
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday"
+      ],
+      "conditions": [
+        "wednesday|=|evening"
+      ],
+      "id": "7b51dacd-1ab1-42f5-9889-616c3eed3a34"
+    },
+    {
+      "lecturerId": "L006",
+      "lecturerName": "Ms. Tika",
+      "subject": [
+        "CAP062"
+      ],
+      "availability": [
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday"
+      ],
+      "conditions": [],
+      "id": "af767545-7497-4a75-a74e-7f2e2288c64a"
+    },
+    {
+      "lecturerId": "L007",
+      "lecturerName": "Mr. Rizal",
+      "subject": [
+        "COR063",
+        "THE065",
+        "IND071"
+      ],
+      "availability": [
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday"
+      ],
+      "conditions": [
+        "friday|=|morning",
+        "thursday|=|morning",
+        "friday|=|afternoon"
+      ],
+      "id": "a9a7a2ea-a79b-4c24-9380-f2afd968e882"
+    },
+    {
+      "lecturerId": "L008",
+      "lecturerName": "Dr. Sandra",
+      "subject": [
+        "CAR068",
+        "SUP029"
+      ],
+      "availability": [
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday"
+      ],
+      "conditions": [
+        "tuesday|=|afternoon"
+      ],
+      "id": "4163d7f9-cb20-4414-9ad6-4d2f082ed2de"
+    },
+    {
+      "lecturerId": "L009",
+      "lecturerName": "Dr. Hendra",
+      "subject": [
+        "POD032"
+      ],
+      "availability": [
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday"
+      ],
+      "conditions": [
+        "wednesday|=|morning"
+      ],
+      "id": "1d810b72-a628-4b47-97ff-245ba40f47ca"
+    },
+    {
+      "lecturerId": "L010",
+      "lecturerName": "Prof. Albert",
+      "subject": [
+        "GLO021",
+        "ORG039"
+      ],
+      "availability": [
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday"
+      ],
+      "conditions": [
+        "wednesday|=|morning",
+        "tuesday|=|afternoon"
+      ],
+      "id": "32a420f2-c47e-4571-8ae6-c9a10e9575b4"
+    },
+    {
+      "lecturerId": "L011",
+      "lecturerName": "Dr. Ika",
+      "subject": [
+        "FEA051",
+        "NEW060"
+      ],
+      "availability": [
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday"
+      ],
+      "conditions": [
+        "monday|=|afternoon"
+      ],
+      "id": "27e6aedc-f193-4281-839e-1a0e10cd12a7"
+    },
+    {
+      "lecturerId": "L012",
+      "lecturerName": "Ms. Rina",
+      "subject": [
+        "CAP062",
+        "CAS066",
+        "PRO025"
+      ],
+      "availability": [
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday"
+      ],
+      "conditions": [
+        "thursday|=|morning",
+        "wednesday|=|evening"
+      ],
+      "id": "808912c5-758a-4d4e-9b22-8a96efbebed0"
+    },
+    {
+      "lecturerId": "L013",
+      "lecturerName": "Dr. Farel",
+      "subject": [
+        "FUZ022"
+      ],
+      "availability": [
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday"
+      ],
+      "conditions": [],
+      "id": "0d1e5c03-6ea7-4baf-af8a-f83cd7ef76cb"
+    },
+    {
+      "lecturerId": "L014",
+      "lecturerName": "Prof. Joko",
+      "subject": [
+        "BIG012",
+        "POL067",
+        "SUP029"
+      ],
+      "availability": [
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday"
+      ],
+      "conditions": [],
+      "id": "b693b3cf-16af-4873-9a18-fa5b9fc616a3"
+    },
+    {
+      "lecturerId": "L015",
+      "lecturerName": "Ms. Dita",
+      "subject": [
+        "CIT006",
+        "TEC059"
+      ],
+      "availability": [
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday"
+      ],
+      "conditions": [],
+      "id": "b29ae93d-b14e-4e8c-8e15-ebc82c4a1f9f"
+    },
+    {
+      "lecturerId": "L016",
+      "lecturerName": "Prof. Danu",
+      "subject": [
+        "ADV009",
+        "POL067"
+      ],
+      "availability": [
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday"
+      ],
+      "conditions": [
+        "tuesday|=|morning",
+        "thursday|=|evening"
+      ],
+      "id": "21265994-cb4f-4b83-badb-ee3dda3d7f96"
+    },
+    {
+      "lecturerId": "L017",
+      "lecturerName": "Dr. Anwar",
+      "subject": [
+        "IND007",
+        "MEC010",
+        "USF020"
+      ],
+      "availability": [
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday"
+      ],
+      "conditions": [
+        "friday|=|morning",
+        "thursday|=|afternoon",
+        "friday|=|evening"
+      ],
+      "id": "385e00a3-064b-40a7-a8e7-cd74c707e356"
+    },
+    {
+      "lecturerId": "L018",
+      "lecturerName": "Prof. Hilda",
+      "subject": [
+        "MAN008"
+      ],
+      "availability": [
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday"
+      ],
+      "conditions": [
+        "monday|=|afternoon"
+      ],
+      "id": "88192751-831d-4803-ac41-5ac37224a7c1"
+    },
+    {
+      "lecturerId": "L019",
+      "lecturerName": "Ms. Sita",
+      "subject": [
+        "SEL058"
+      ],
+      "availability": [
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday"
+      ],
+      "conditions": [
+        "wednesday|=|evening",
+        "wednesday|=|afternoon"
+      ],
+      "id": "d625a1da-7075-483a-a692-ed08804384ac"
+    },
+    {
+      "lecturerId": "L020",
+      "lecturerName": "Mr. Andre",
+      "subject": [
+        "RES045"
+      ],
+      "availability": [
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday"
+      ],
+      "conditions": [
+        "friday|=|evening"
+      ],
+      "id": "1d708479-e3b2-40b5-98f7-5c5e80ab2bb2"
+    },
+    {
+      "lecturerId": "L021",
+      "lecturerName": "Dr. Yudi",
+      "subject": [
+        "IND041"
+      ],
+      "availability": [
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday"
+      ],
+      "conditions": [
+        "thursday|=|morning"
+      ],
+      "id": "b73911fe-a1f2-4469-9017-50e1f668d12e"
+    },
+    {
+      "lecturerId": "L022",
+      "lecturerName": "Ms. Putri",
+      "subject": [
+        "ITF014",
+        "MEC010",
+        "MED017"
+      ],
+      "availability": [
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday"
+      ],
+      "conditions": [],
+      "id": "44f70cb4-ffc4-46a9-acfc-1d4323d46fc9"
+    },
+    {
+      "lecturerId": "L023",
+      "lecturerName": "Prof. Yanto",
+      "subject": [
+        "CAS066",
+        "SCI037"
+      ],
+      "availability": [
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday"
+      ],
+      "conditions": [
+        "tuesday|=|morning",
+        "wednesday|=|afternoon",
+        "friday|=|afternoon"
+      ],
+      "id": "71c41d31-be37-4683-8f31-075efcafe633"
+    },
+    {
+      "lecturerId": "L024",
+      "lecturerName": "Dr. Anisa",
+      "subject": [
+        "POS048"
+      ],
+      "availability": [
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday"
+      ],
+      "conditions": [],
+      "id": "7bd2358c-ee68-46d6-b05a-cdc474384d0b"
+    },
+    {
+      "lecturerId": "L025",
+      "lecturerName": "Mr. Theo",
+      "subject": [
+        "ENV024",
+        "MED033",
+        "SEL058"
+      ],
+      "availability": [
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday"
+      ],
+      "conditions": [
+        "wednesday|=|afternoon"
+      ],
+      "id": "889c6b00-e52b-40fc-9839-3be5167cbdd3"
+    },
+    {
+      "lecturerId": "L026",
+      "lecturerName": "Prof. Abdi",
+      "subject": [
+        "GLO056"
+      ],
+      "availability": [
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday"
+      ],
+      "conditions": [
+        "tuesday|=|evening"
+      ],
+      "id": "a707fd93-79f4-40c1-b140-744e5dfca04a"
+    },
+    {
+      "lecturerId": "L027",
+      "lecturerName": "Ms. Vina",
+      "subject": [
+        "CAP062",
+        "ENV036",
+        "GLO056"
+      ],
+      "availability": [
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday"
+      ],
+      "conditions": [],
+      "id": "9cb49c45-91d2-47f4-b0c1-a00b6d9ae6af"
+    },
+    {
+      "lecturerId": "L028",
+      "lecturerName": "Dr. Yani",
+      "subject": [
+        "COM061",
+        "MAR016"
+      ],
+      "availability": [
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday"
+      ],
+      "conditions": [],
+      "id": "eb546a6f-07ce-405d-a4a2-66f53da6fdcb"
+    },
+    {
+      "lecturerId": "L029",
+      "lecturerName": "Mr. Dedi",
+      "subject": [
+        "SUP038",
+        "TAX001",
+        "TEC059"
+      ],
+      "availability": [
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday"
+      ],
+      "conditions": [
+        "thursday|=|afternoon",
+        "wednesday|=|evening"
+      ],
+      "id": "13302e49-08ef-4abf-a5c9-652a3bd1e3a6"
+    },
+    {
+      "lecturerId": "L030",
+      "lecturerName": "Prof. Edi",
+      "subject": [
+        "LAW064",
+        "SCI037"
+      ],
+      "availability": [
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday"
+      ],
+      "conditions": [
+        "thursday|=|afternoon",
+        "thursday|=|afternoon"
+      ],
+      "id": "c1056e54-c78e-42a8-997c-c9d52ef9911d"
+    }
+  ],
+  "studentMajor": [
+    {
+      "batchId": "N ACC-2023 Class",
+      "batchName": "N ACC-2023 Class",
+      "major": "Accounting",
+      "batchYear": 2024,
+      "amount": 30,
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "batchId": "N ACC-2024 Class",
+      "batchName": "N ACC-2024 Class",
+      "major": "Accounting",
+      "batchYear": 2024,
+      "amount": 30
+    },
+    {
+      "id": "3",
+      "batchId": "N BA-2023 RETAIL BUSINESS",
+      "batchName": "N BA-2023 RETAIL BUSINESS",
+      "major": "Business Administration",
+      "batchYear": 2023,
+      "amount": 30
+    },
+    {
+      "id": "4",
+      "batchId": "N BA-2024 Class",
+      "batchName": "N BA-2024 Class",
+      "major": "Business Administration",
+      "batchYear": 2024,
+      "amount": 30
+    },
+    {
+      "id": "5",
+      "batchId": "N IR-2024 Class",
+      "batchName": "N IR-2024 Class",
+      "major": "International Relations",
+      "batchYear": 2024,
+      "amount": 30
+    },
+    {
+      "id": "6",
+      "batchId": "N IS-2024 Class",
+      "batchName": "N IS-2024 Class",
+      "major": "Information System",
+      "batchYear": 2024,
+      "amount": 30
+    },
+    {
+      "id": "7",
+      "batchId": "N IT-2024 Class",
+      "batchName": "N IT-2024 Class",
+      "major": "Informatics",
+      "batchYear": 2024,
+      "amount": 30
+    },
+    {
+      "id": "8",
+      "batchId": "N ME-2023 Class",
+      "batchName": "N ME-2023 Class",
+      "major": "Mechanical Engineering",
+      "batchYear": 2023,
+      "amount": 30
+    },
+    {
+      "id": "9",
+      "batchId": "N ME-2024 Class",
+      "batchName": "N ME-2024 Class",
+      "major": "Mechanical Engineering",
+      "batchYear": 2024,
+      "amount": 30
+    },
+    {
+      "id": "10",
+      "batchId": "N S2IT-2024 BATCH 2",
+      "batchName": "N S2IT-2024 BATCH 2",
+      "major": "Informatics",
+      "batchYear": 2024,
+      "amount": 30
+    },
+    {
+      "id": "11",
+      "batchId": "N COMM-2024 Class",
+      "batchName": "N COMM-2024 Class",
+      "major": "Communication Science",
+      "batchYear": 2024,
+      "amount": 30
+    },
+    {
+      "id": "12",
+      "batchId": "N COMM-2023 FILM & MEDIA STUDIES",
+      "batchName": "N COMM-2023 FILM & MEDIA STUDIES",
+      "major": "Communication Science",
+      "batchYear": 2023,
+      "amount": 30
+    },
+    {
+      "id": "13",
+      "batchId": "N COMM-2023 PUBLIC RELATIONS & DIGITAL COMMUNICATIONS CLASS",
+      "batchName": "N COMM-2023 PUBLIC RELATIONS & DIGITAL COMMUNICATIONS CLASS",
+      "major": "Communication Science",
+      "batchYear": 2023,
+      "amount": 30
+    },
+    {
+      "id": "14",
+      "batchId": "N IR-2023 Class",
+      "batchName": "N IR-2023 Class",
+      "major": "International Relations",
+      "batchYear": 2023,
+      "amount": 30
+    },
+    {
+      "id": "15",
+      "batchId": "N EE-2023 Control System",
+      "batchName": "N EE-2023 Control System",
+      "major": "Electrical Engineering",
+      "batchYear": 2023,
+      "amount": 30
+    },
+    {
+      "id": "16",
+      "batchId": "N EE-2024 Class",
+      "batchName": "N EE-2024 Class",
+      "major": "Electrical Engineering",
+      "batchYear": 2024,
+      "amount": 30
+    },
+    {
+      "id": "17",
+      "batchId": "N ENV-2024 Class",
+      "batchName": "N ENV-2024 Class",
+      "major": "Environmental Engineering",
+      "batchYear": 2024,
+      "amount": 30
+    },
+    {
+      "id": "18",
+      "batchId": "N IS-2023 ERP Class",
+      "batchName": "N IS-2023 ERP Class",
+      "major": "Information System",
+      "batchYear": 2023,
+      "amount": 30
+    },
+    {
+      "id": "19",
+      "batchId": "N ENV-2023 Class",
+      "batchName": "N ENV-2023 Class",
+      "major": "Environmental Engineering",
+      "batchYear": 2023,
+      "amount": 30
+    },
+    {
+      "id": "20",
+      "batchId": "N IE-2023 Class 1",
+      "batchName": "N IE-2023 Class 1",
+      "major": "Industrial Engineering",
+      "batchYear": 2023,
+      "amount": 30
+    },
+    {
+      "id": "21",
+      "batchId": "N IE-2023 Class 2",
+      "batchName": "N IE-2023 Class 2",
+      "major": "Industrial Engineering",
+      "batchYear": 2023,
+      "amount": 30
+    },
+    {
+      "id": "22",
+      "batchId": "N IE-2024 Class 1",
+      "batchName": "N IE-2024 Class 1",
+      "major": "Industrial Engineering",
+      "batchYear": 2024,
+      "amount": 30
+    },
+    {
+      "id": "23",
+      "batchId": "N IE-2024 Class 2",
+      "batchName": "N IE-2024 Class 2",
+      "major": "Industrial Engineering",
+      "batchYear": 2024,
+      "amount": 30
+    },
+    {
+      "id": "24",
+      "batchId": "N IS-2022 Class",
+      "batchName": "N IS-2022 Class",
+      "major": "Information System",
+      "batchYear": 2022,
+      "amount": 30
+    },
+    {
+      "id": "25",
+      "batchId": "N CE-2024 Class",
+      "batchName": "N CE-2024 Class",
+      "major": "Civil Engineering",
+      "batchYear": 2024,
+      "amount": 30
+    },
+    {
+      "id": "26",
+      "batchId": "N LAW-2024 Class",
+      "batchName": "N LAW-2024 Class",
+      "major": "Law",
+      "batchYear": 2024,
+      "amount": 30
+    },
+    {
+      "id": "27",
+      "batchId": "N EE-2022 Class",
+      "batchName": "N EE-2022 Class",
+      "major": "Electrical Engineering",
+      "batchYear": 2022,
+      "amount": 30
+    },
+    {
+      "id": "28",
+      "batchId": "N S2IT-2024 BATCH 1",
+      "batchName": "N S2IT-2024 BATCH 1",
+      "major": "Informatics",
+      "batchYear": 2024,
+      "amount": 30
+    },
+    {
+      "id": "29",
+      "batchId": "N S2LAW-2024 CORPORATE LAW",
+      "batchName": "N S2LAW-2024 CORPORATE LAW",
+      "major": "Magister Law",
+      "batchYear": 2024,
+      "amount": 30
+    },
+    {
+      "id": "30",
+      "batchId": "N S2LAW-2024 INTERNATIONAL LAW",
+      "batchName": "N S2LAW-2024 INTERNATIONAL LAW",
+      "major": "Magister Law",
+      "batchYear": 2024,
+      "amount": 30
+    },
+    {
+      "id": "31",
+      "batchId": "N MGT-2024 Class",
+      "batchName": "N MGT-2024 Class",
+      "major": "Management",
+      "batchYear": 2024,
+      "amount": 30
+    },
+    {
+      "id": "32",
+      "batchId": "N LAW-2023 Corporate Law",
+      "batchName": "N LAW-2023 Corporate Law",
+      "major": "Law",
+      "batchYear": 2023,
+      "amount": 30
+    },
+    {
+      "id": "33",
+      "batchId": "N MGT-2023 DCM",
+      "batchName": "N MGT-2023 DCM",
+      "major": "Management",
+      "batchYear": 2023,
+      "amount": 30
+    },
+    {
+      "id": "34",
+      "batchId": "N MGT-2023 HCM",
+      "batchName": "N MGT-2023 HCM",
+      "major": "Management",
+      "batchYear": 2023,
+      "amount": 30
+    },
+    {
+      "id": "35",
+      "batchId": "N S2MTek-2024 Batch 13_Class A",
+      "batchName": "N S2MTek-2024 Batch 13_Class A",
+      "major": "Technology Management",
+      "batchYear": 2024,
+      "amount": 30
+    },
+    {
+      "id": "36",
+      "batchId": "N S2MTek-2024 Batch 13_Class B",
+      "batchName": "N S2MTek-2024 Batch 13_Class B",
+      "major": "Technology Management",
+      "batchYear": 2024,
+      "amount": 30
+    },
+    {
+      "id": "37",
+      "batchId": "N S2MTek-2024 Batch 12 - Finance",
+      "batchName": "N S2MTek-2024 Batch 12 - Finance",
+      "major": "Technology Management",
+      "batchYear": 2024,
+      "amount": 30
+    },
+    {
+      "id": "38",
+      "batchId": "N S2MTek-2024 Batch 12 - Operation",
+      "batchName": "N S2MTek-2024 Batch 12 - Operation",
+      "major": "Technology Management",
+      "batchYear": 2024,
+      "amount": 30
+    },
+    {
+      "id": "39",
+      "batchId": "N S2MTek-2024 Batch 12 - Marketing",
+      "batchName": "N S2MTek-2024 Batch 12 - Marketing",
+      "major": "Technology Management",
+      "batchYear": 2024,
+      "amount": 30
+    },
+    {
+      "id": "40",
+      "batchId": "N S2MTek-2024 Batch 12 - Entrepreneurship",
+      "batchName": "N S2MTek-2024 Batch 12 - Entrepreneurship",
+      "major": "Technology Management",
+      "batchYear": 2024,
+      "amount": 30
+    },
+    {
+      "id": "41",
+      "batchId": "N IE-2022 Class 1",
+      "batchName": "N IE-2022 Class 1",
+      "major": "Industrial Engineering",
+      "batchYear": 2022,
+      "amount": 30
+    },
+    {
+      "id": "42",
+      "batchId": "N IE-2022 Class 2",
+      "batchName": "N IE-2022 Class 2",
+      "major": "Industrial Engineering",
+      "batchYear": 2022,
+      "amount": 30
+    },
+    {
+      "id": "43",
+      "batchId": "N ME-2022 Class",
+      "batchName": "N ME-2022 Class",
+      "major": "Mechanical Engineering",
+      "batchYear": 2022,
+      "amount": 30
+    },
+    {
+      "id": "44",
+      "batchId": "N ENV Final Project By Course 1",
+      "batchName": "N ENV Final Project By Course 1",
+      "major": "Environmental Engineering",
+      "batchYear": 2023,
+      "amount": 30
+    },
+    {
+      "id": "45",
+      "batchId": "N ENV Final Project By Course 2",
+      "batchName": "N ENV Final Project By Course 2",
+      "major": "Environmental Engineering",
+      "batchYear": 2023,
+      "amount": 30
+    },
+    {
+      "id": "46",
+      "batchId": "N MEN Final Project By Course 1",
+      "batchName": "N MEN Final Project By Course 1",
+      "major": "Mechanical Engineering",
+      "batchYear": 2023,
+      "amount": 30
+    },
+    {
+      "id": "47",
+      "batchId": "N MEN Final Project By Course 2",
+      "batchName": "N MEN Final Project By Course 2",
+      "major": "Mechanical Engineering",
+      "batchYear": 2023,
+      "amount": 30
+    },
+    {
+      "id": "48",
+      "batchId": "N EEN Final Project By Course 1",
+      "batchName": "N EEN Final Project By Course 1",
+      "major": "Electrical Engineering",
+      "batchYear": 2023,
+      "amount": 30
+    },
+    {
+      "id": "49",
+      "batchId": "N EEN Final Project By Course 2",
+      "batchName": "N EEN Final Project By Course 2",
+      "major": "Electrical Engineering",
+      "batchYear": 2023,
+      "amount": 30
+    }
+  ],
+  "room": [
+    {
+      "roomCode": "T1-1",
+      "roomName": "Theory Room L1-1",
+      "capacity": 80,
+      "roomType": "Teori",
+      "facility": [
+        "AC"
+      ],
+      "id": "room1"
+    },
+    {
+      "id": "room2",
+      "roomCode": "T1-2",
+      "roomName": "Theory Room L1-2",
+      "capacity": 80,
+      "roomType": "Teori",
+      "facility": [
+        "Projector",
+        "Whiteboard",
+        "AC"
+      ]
+    },
+    {
+      "id": "room3",
+      "roomCode": "T1-3",
+      "roomName": "Theory Room L1-3",
+      "capacity": 80,
+      "roomType": "Teori",
+      "facility": [
+        "Projector",
+        "Whiteboard",
+        "AC"
+      ]
+    },
+    {
+      "id": "room4",
+      "roomCode": "T1-4",
+      "roomName": "Theory Room L1-4",
+      "capacity": 80,
+      "roomType": "Teori",
+      "facility": [
+        "Projector",
+        "Whiteboard",
+        "AC"
+      ]
+    },
+    {
+      "id": "room5",
+      "roomCode": "T2-1",
+      "roomName": "Theory Room L2-1",
+      "capacity": 40,
+      "roomType": "Teori",
+      "facility": [
+        "Projector",
+        "Whiteboard",
+        "AC"
+      ]
+    },
+    {
+      "id": "room6",
+      "roomCode": "T2-2",
+      "roomName": "Theory Room L2-2",
+      "capacity": 40,
+      "roomType": "Teori",
+      "facility": [
+        "Projector",
+        "Whiteboard",
+        "AC"
+      ]
+    },
+    {
+      "id": "room7",
+      "roomCode": "T2-3",
+      "roomName": "Theory Room L2-3",
+      "capacity": 40,
+      "roomType": "Teori",
+      "facility": [
+        "Projector",
+        "Whiteboard",
+        "AC"
+      ]
+    },
+    {
+      "id": "room8",
+      "roomCode": "T2-4",
+      "roomName": "Theory Room L2-4",
+      "capacity": 40,
+      "roomType": "Teori",
+      "facility": [
+        "Projector",
+        "Whiteboard",
+        "AC"
+      ]
+    },
+    {
+      "id": "room9",
+      "roomCode": "T2-5",
+      "roomName": "Theory Room L2-5",
+      "capacity": 40,
+      "roomType": "Teori",
+      "facility": [
+        "Projector",
+        "Whiteboard",
+        "AC"
+      ]
+    },
+    {
+      "id": "room10",
+      "roomCode": "T2-6",
+      "roomName": "Theory Room L2-6",
+      "capacity": 40,
+      "roomType": "Teori",
+      "facility": [
+        "Projector",
+        "Whiteboard",
+        "AC"
+      ]
+    },
+    {
+      "id": "room11",
+      "roomCode": "T2-7",
+      "roomName": "Theory Room L2-7",
+      "capacity": 40,
+      "roomType": "Teori",
+      "facility": [
+        "Projector",
+        "Whiteboard",
+        "AC"
+      ]
+    },
+    {
+      "id": "room12",
+      "roomCode": "T2-8",
+      "roomName": "Theory Room L2-8",
+      "capacity": 40,
+      "roomType": "Teori",
+      "facility": [
+        "Projector",
+        "Whiteboard",
+        "AC"
+      ]
+    },
+    {
+      "id": "room13",
+      "roomCode": "T3-1",
+      "roomName": "Theory Room L3-1",
+      "capacity": 40,
+      "roomType": "Teori",
+      "facility": [
+        "Projector",
+        "Whiteboard",
+        "AC"
+      ]
+    },
+    {
+      "id": "room14",
+      "roomCode": "T3-2",
+      "roomName": "Theory Room L3-2",
+      "capacity": 40,
+      "roomType": "Teori",
+      "facility": [
+        "Projector",
+        "Whiteboard",
+        "AC"
+      ]
+    },
+    {
+      "id": "room15",
+      "roomCode": "T3-3",
+      "roomName": "Theory Room L3-3",
+      "capacity": 40,
+      "roomType": "Teori",
+      "facility": [
+        "Projector",
+        "Whiteboard",
+        "AC"
+      ]
+    },
+    {
+      "id": "room16",
+      "roomCode": "T3-4",
+      "roomName": "Theory Room L3-4",
+      "capacity": 40,
+      "roomType": "Teori",
+      "facility": [
+        "Projector",
+        "Whiteboard",
+        "AC"
+      ]
+    },
+    {
+      "id": "room17",
+      "roomCode": "T3-5",
+      "roomName": "Theory Room L3-5",
+      "capacity": 40,
+      "roomType": "Teori",
+      "facility": [
+        "Projector",
+        "Whiteboard",
+        "AC"
+      ]
+    },
+    {
+      "id": "room18",
+      "roomCode": "T3-6",
+      "roomName": "Theory Room L3-6",
+      "capacity": 40,
+      "roomType": "Teori",
+      "facility": [
+        "Projector",
+        "Whiteboard",
+        "AC"
+      ]
+    },
+    {
+      "id": "room19",
+      "roomCode": "T3-7",
+      "roomName": "Theory Room L3-7",
+      "capacity": 40,
+      "roomType": "Teori",
+      "facility": [
+        "Projector",
+        "Whiteboard",
+        "AC"
+      ]
+    },
+    {
+      "id": "room20",
+      "roomCode": "T3-8",
+      "roomName": "Theory Room L3-8",
+      "capacity": 40,
+      "roomType": "Teori",
+      "facility": [
+        "Projector",
+        "Whiteboard",
+        "AC"
+      ]
+    },
+    {
+      "id": "room21",
+      "roomCode": "T4-1",
+      "roomName": "Theory Room L4-1",
+      "capacity": 40,
+      "roomType": "Teori",
+      "facility": [
+        "Projector",
+        "Whiteboard",
+        "AC"
+      ]
+    },
+    {
+      "id": "room22",
+      "roomCode": "T4-2",
+      "roomName": "Theory Room L4-2",
+      "capacity": 40,
+      "roomType": "Teori",
+      "facility": [
+        "Projector",
+        "Whiteboard",
+        "AC"
+      ]
+    },
+    {
+      "id": "room23",
+      "roomCode": "T4-3",
+      "roomName": "Theory Room L4-3",
+      "capacity": 40,
+      "roomType": "Teori",
+      "facility": [
+        "Projector",
+        "Whiteboard",
+        "AC"
+      ]
+    },
+    {
+      "id": "room24",
+      "roomCode": "T4-4",
+      "roomName": "Theory Room L4-4",
+      "capacity": 40,
+      "roomType": "Teori",
+      "facility": [
+        "Projector",
+        "Whiteboard",
+        "AC"
+      ]
+    },
+    {
+      "id": "room25",
+      "roomCode": "T4-5",
+      "roomName": "Theory Room L4-5",
+      "capacity": 40,
+      "roomType": "Teori",
+      "facility": [
+        "Projector",
+        "Whiteboard",
+        "AC"
+      ]
+    },
+    {
+      "id": "room26",
+      "roomCode": "T4-6",
+      "roomName": "Theory Room L4-6",
+      "capacity": 40,
+      "roomType": "Teori",
+      "facility": [
+        "Projector",
+        "Whiteboard",
+        "AC"
+      ]
+    },
+    {
+      "id": "room27",
+      "roomCode": "T4-7",
+      "roomName": "Theory Room L4-7",
+      "capacity": 40,
+      "roomType": "Teori",
+      "facility": [
+        "Projector",
+        "Whiteboard",
+        "AC"
+      ]
+    },
+    {
+      "id": "room28",
+      "roomCode": "T4-8",
+      "roomName": "Theory Room L4-8",
+      "capacity": 40,
+      "roomType": "Teori",
+      "facility": [
+        "Projector",
+        "Whiteboard",
+        "AC"
+      ]
+    },
+    {
+      "id": "room29",
+      "roomCode": "LAB-1",
+      "roomName": "Lab Komputer 1",
+      "capacity": 40,
+      "roomType": "Lab Komputer",
+      "facility": [
+        "Computers",
+        "Projector",
+        "AC",
+        "LAN"
+      ]
+    },
+    {
+      "id": "room30",
+      "roomCode": "LAB-2",
+      "roomName": "Lab Komputer 2",
+      "capacity": 40,
+      "roomType": "Lab Komputer",
+      "facility": [
+        "Computers",
+        "Projector",
+        "AC",
+        "LAN"
+      ]
+    },
+    {
+      "id": "room31",
+      "roomCode": "LAB-3",
+      "roomName": "Lab Komputer 3",
+      "capacity": 40,
+      "roomType": "Lab Komputer",
+      "facility": [
+        "Computers",
+        "Projector",
+        "AC",
+        "LAN"
+      ]
+    },
+    {
+      "id": "room32",
+      "roomCode": "LAB-4",
+      "roomName": "Lab Komputer 4",
+      "capacity": 40,
+      "roomType": "Lab Komputer",
+      "facility": [
+        "Computers",
+        "Projector",
+        "AC",
+        "LAN"
+      ]
+    }
+  ]
+}
