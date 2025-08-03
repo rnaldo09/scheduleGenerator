@@ -84,11 +84,7 @@ export function useStepMasterData() {
   };
 
   const addBatch = (batch: any) => {
-    const entries = Object.values(batch).filter((v) => typeof v === "object" && v !== null && "batchId" in v);
-    if (entries.length > 0) {
-      const cleaned = entries[0] as Batch;
-      setBatches((prev) => [...prev, cleaned]);
-    }
+    setBatches(batch)
   };
 
   return {

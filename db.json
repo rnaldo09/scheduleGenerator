@@ -1870,19 +1870,9 @@
   ],
   "schedule": [
     {
-      "id": "e675",
-      "semester": "20252",
-      "schedule": "[{\"day\":\"monday\",\"startTime\":\"07:00\",\"endTime\":\"09:15\",\"subject\":\"Accounting Theory\",\"batch\":\"N BA-2024 Class\",\"room\":\"Theory Room L1-4\",\"lecturer\":\"Prof. Rudi\"},{\"day\":\"tuesday\",\"startTime\":\"07:00\",\"endTime\":\"09:15\",\"subject\":\"Advanced Manufacturing and Sustainable Industry\",\"batch\":\"N BA-2024 Class\",\"room\":\"Theory Room L4-7\",\"lecturer\":\"Prof. Danu\"}]"
-    },
-    {
-      "id": "3941",
-      "semester": "20243",
-      "schedule": "[{\"day\":\"monday\",\"startTime\":\"07:00\",\"endTime\":\"09:15\",\"subject\":\"Environmental Impact Assesment\",\"batch\":\"N IE-2022 Class 1\",\"room\":\"Theory Room L1-2\",\"lecturer\":\"Mr. Theo\"},{\"day\":\"tuesday\",\"startTime\":\"12:00\",\"endTime\":\"14:15\",\"subject\":\"Environmental Circular Economy\",\"batch\":\"N IE-2022 Class 1\",\"room\":\"Lab Komputer 3\",\"lecturer\":\"Prof. Rudi\"}]"
-    },
-    {
-      "id": "2017",
+      "id": "fdc5",
       "semester": "20251",
-      "schedule": "[{\"day\":\"monday\",\"startTime\":\"07:00\",\"endTime\":\"09:15\",\"subject\":\"Academic Writing\",\"batch\":\"N ACC-2023 Class\",\"room\":\"Theory Room L2-4\",\"lecturer\":\"Prof. Budi\"},{\"day\":\"tuesday\",\"startTime\":\"12:00\",\"endTime\":\"14:15\",\"subject\":\"Accounting Theory\",\"batch\":\"N ACC-2023 Class\",\"room\":\"Theory Room L3-2\",\"lecturer\":\"Prof. Rudi\"},{\"day\":\"thursday\",\"startTime\":\"07:00\",\"endTime\":\"09:15\",\"subject\":\"Academic Writing\",\"batch\":\"N ACC-2023 Class\",\"room\":\"Theory Room L1-1\",\"lecturer\":\"Prof. Budi\"},{\"day\":\"wednesday\",\"startTime\":\"12:00\",\"endTime\":\"14:15\",\"subject\":\"Accounting Theory\",\"batch\":\"N ACC-2023 Class\",\"room\":\"Theory Room L4-2\",\"lecturer\":\"Prof. Rudi\"}]"
+      "schedule": "[{\"day\":\"monday\",\"startTime\":\"07:00\",\"endTime\":\"09:15\",\"subject\":\"Academic Writing\",\"batch\":\"N ACC-2023 Class\",\"room\":\"Theory Room L2-3\",\"lecturer\":\"Prof. Budi\"},{\"day\":\"tuesday\",\"startTime\":\"12:00\",\"endTime\":\"14:15\",\"subject\":\"Accounting Theory\",\"batch\":\"N ACC-2023 Class\",\"room\":\"Theory Room L1-4\",\"lecturer\":\"Prof. Rudi\"},{\"day\":\"monday\",\"startTime\":\"09:30\",\"endTime\":\"11:45\",\"subject\":\"Advanced Manufacturing and Sustainable Industry\",\"batch\":\"N ACC-2024 Class\",\"room\":\"Theory Room L3-1\",\"lecturer\":\"Prof. Danu\"},{\"day\":\"monday\",\"startTime\":\"12:00\",\"endTime\":\"14:15\",\"subject\":\"Big Data Analytics\",\"batch\":\"N BA-2023 RETAIL BUSINESS\",\"room\":\"Lab Komputer 4\",\"lecturer\":\"Prof. Joko\"}]"
     }
   ]
 }

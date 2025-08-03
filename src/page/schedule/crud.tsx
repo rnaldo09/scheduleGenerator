@@ -65,6 +65,7 @@ export const ScheduleStepForm: React.FC<ScheduleStepFormProps> = ({ onCancel, on
   }, []);
 
   const handleFinish = async () => {
+    console.log("Batches: ", batches)
     try {
       const generated = generateSchedule({
         rooms,

@@ -31,6 +31,7 @@ export const useOptimizedSchedule = () => {
     lecturers: Lecturer[],
     rooms: Room[],
   }) => {
+    console.log("Test: ", {students})
     const result: ScheduleItem[] = [];
     const slotLength = timeReq.classDuration + timeReq.breakDuration;
     const start = parseTime(timeReq.startTime);
