@@ -7,6 +7,7 @@ import RoomTable from './page/rooms/list';
 import LecturerTable from './page/lecturers/list';
 import BatchesTable from './page/batches/list';
 import ClassSubjectTable from './page/subjects/list';
+import ScheduleTable from './page/schedule/list';
 
 const { Sider, Content } = Layout;
 
@@ -48,7 +49,7 @@ const App: React.FC = () => {
           {/* Define the Routes for different paths */}
           <Routes>
             <Route path="/dashboard" element={<Dashboard />} />
-            {/* <Route path="/class-schedule" element={<Schedule />} /> If this is another page */}
+            <Route path="/class-schedule" element={<ScheduleTable />} />
             <Route path="/rooms" element={<RoomTable />} />
             <Route path="/lecturers" element={<LecturerTable />} />
             <Route path="/batches" element={<BatchesTable />} />

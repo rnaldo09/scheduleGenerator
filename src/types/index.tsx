@@ -8,6 +8,7 @@ export type Day =
   | "sunday";
 
 export type timeRequirementType = {
+    semester: string,
     day: Day[],
     classDuration: number,
     breakDuration: number,
@@ -60,4 +61,10 @@ export interface ScheduleItem {
   batch: string;
   room: string;
   lecturer: string;
+}
+
+export interface ScheduleList {
+  id: string;
+  semester: string;
+  schedule: string;
 }

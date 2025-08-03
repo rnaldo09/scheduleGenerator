@@ -11,6 +11,7 @@ export function useStepMasterData() {
   const [lecturers, setLecturers] = useState<Lecturer[]>([]);
   const [batches, setBatches] = useState<Batch[]>([]);
   const [timeRequirement, setTimeRequirement] = useState<timeRequirementType>({
+    semester: '',
     day: [],
     classDuration: 30,
     breakDuration: 5,
@@ -19,11 +20,11 @@ export function useStepMasterData() {
     endTime: '',
     conditions: []
   });
-  
+
   const subjectOptions = subjects.map((subj) => ({
     label: subj.subjectName,
     value: subj.subjectCode,
-    }));
+  }));
 
   const normalizeDays = (value: string | string[] | undefined): Day[] => {
     if (!value) return [];
@@ -34,13 +35,12 @@ export function useStepMasterData() {
         : [value.trim()];
     return values.filter((v): v is Day => dayOptions.includes(v as Day));
   }
-    
-  const normalizeStringArray = (value: string | string[] | undefined): string[] => {
-  if (!value) return [];
-  if (Array.isArray(value)) return value;
-  return value.includes(',') ? value.split(',').map((v) => v.trim()) : [value.trim()];
-};
 
+  const normalizeStringArray = (value: string | string[] | undefined): string[] => {
+    if (!value) return [];
+    if (Array.isArray(value)) return value;
+    return value.includes(',') ? value.split(',').map((v) => v.trim()) : [value.trim()];
+  };
 
   const next = () => setCurrentStep((c) => Math.min(c + 1, 4));
   const prev = () => setCurrentStep((c) => Math.max(c - 1, 0));
@@ -48,9 +48,9 @@ export function useStepMasterData() {
 
   const addTimeRequirement = (timeRequirement: Omit<timeRequirementType, "conditions"> & { conditions: string[] }) => {
     setTimeRequirement({
-    ...timeRequirement,
-    conditions: normalizeStringArray(timeRequirement.conditions)
-  });
+      ...timeRequirement,
+      conditions: normalizeStringArray(timeRequirement.conditions)
+    });
   }
 
   const addRoom = (room: Omit<Room, "facility"> & { facility: string }) => {
@@ -73,24 +73,22 @@ export function useStepMasterData() {
     conditions: string;
   }) => {
     setLecturers((prev) => [
-    ...prev,
-    {
-      ...lecturer,
-      subject: normalizeStringArray(lecturer.subject),
-      availability: normalizeDays(lecturer.availability),
-      conditions: normalizeStringArray(lecturer.conditions),
-    },
-  ]);
-  };
-
-  const addBatch = (batch: Omit<Batch, "subjectEnroll"> & { subjectEnroll: string }) => {
-    setBatches((prev) => [
       ...prev,
       {
-        ...batch,
-        subjectEnroll: normalizeStringArray(batch.subjectEnroll),
+        ...lecturer,
+        subject: normalizeStringArray(lecturer.subject),
+        availability: normalizeDays(lecturer.availability),
+        conditions: normalizeStringArray(lecturer.conditions),
       },
     ]);
+  };
+
+  const addBatch = (batch: any) => {
+    const entries = Object.values(batch).filter((v) => typeof v === "object" && v !== null && "batchId" in v);
+    if (entries.length > 0) {
+      const cleaned = entries[0] as Batch;
+      setBatches((prev) => [...prev, cleaned]);
+    }
   };
 
   return {

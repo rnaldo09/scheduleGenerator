@@ -1,6 +1,7 @@
 import { Day, timeRequirementType } from "./types"
 
 export const timeRequirement: timeRequirementType = {
+    semester: '20241',
     day: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday'],
     classDuration: 135,
     breakDuration: 15,

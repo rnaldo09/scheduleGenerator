@@ -16,3 +16,8 @@ code {
   background-color: #fff !important;  /* Change background color to green */
   color: white !important;  /* Optional: set text color to white */
 }
+
+/* Bisa di global CSS, atau styled-components, atau module */
+.ant-steps-vertical .ant-steps-item-tail {
+  display: none;
+}

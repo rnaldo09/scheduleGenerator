@@ -9,7 +9,6 @@ const RoomTable: React.FC = () => {
   const [editRoom, setEditRoom] = useState<Room | null>(null);
 
   useEffect(() => {
-    console.log("Kepanggil")
     fetchRooms();
   }, []);
 

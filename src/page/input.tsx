@@ -9,13 +9,6 @@ import { StepLecturers } from "../components/lecture";
 import { StepBatches } from "../components/batch";
 import { useScheduleStore } from "../stores/useScheduleStore";
 import { useOptimizedSchedule } from "../hooks/generateSchedule.hooks";
-import {
-  room,
-  timeRequirement as timeReq,
-  lecturer,
-  classSubject,
-  studentMajor
-} from "../data.mock";
 
 const { Step } = Steps;
 

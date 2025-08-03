@@ -39,30 +39,54 @@ const StepTimeRequirement: React.FC<Props> = ({
     >
       <Row gutter={16}>
         <Col span={12}>
-          <Form.Item 
-            label="Start Time" 
-            name="startTime" 
-            rules={[{ required: true }]}
+          <Form.Item
+            label="Semester"
+            name="semester"
+            rules={[{ required: true, message: 'Semester is required' }]}
           >
-            <Input 
-              placeholder="07.00" 
-              type="time" 
-            />
+            <Input placeholder="e.g., 2025 Genap" />
           </Form.Item>
         </Col>
-        <Col span={12}>
-          <Form.Item 
-            label="End Time" 
-            name="endTime" 
+      </Row>
+
+      <Row gutter={16}>
+        <Col span={24}>
+          <Form.Item
+            label="Days"
+            name="day"
             rules={[{ required: true }]}
           >
-            <Input 
-              placeholder="18.00" 
-              type="time" 
+            <Select
+              mode="multiple"
+              options={daysOptions}
+              placeholder="Select available days"
+              allowClear
             />
           </Form.Item>
         </Col>
       </Row>
+
+      <Row gutter={16}>
+        <Col span={12}>
+          <Form.Item
+            label="Start Time"
+            name="startTime"
+            rules={[{ required: true }]}
+          >
+            <Input type="time" placeholder="07:00" />
+          </Form.Item>
+        </Col>
+        <Col span={12}>
+          <Form.Item
+            label="End Time"
+            name="endTime"
+            rules={[{ required: true }]}
+          >
+            <Input type="time" placeholder="18:00" />
+          </Form.Item>
+        </Col>
+      </Row>
+
       <Row gutter={16}>
         <Col span={8}>
           <Form.Item
@@ -70,11 +94,7 @@ const StepTimeRequirement: React.FC<Props> = ({
             name="classDuration"
             rules={[{ required: true }]}
           >
-            <InputNumber 
-              min={30} 
-              max={240} 
-              style={{ width: "100%" }} 
-            />
+            <InputNumber min={30} max={240} style={{ width: "100%" }} />
           </Form.Item>
         </Col>
         <Col span={8}>
@@ -83,11 +103,7 @@ const StepTimeRequirement: React.FC<Props> = ({
             name="breakDuration"
             rules={[{ required: true }]}
           >
-            <InputNumber 
-              min={5} 
-              max={60} 
-              style={{ width: "100%" }} 
-            />
+            <InputNumber min={5} max={60} style={{ width: "100%" }} />
           </Form.Item>
         </Col>
         <Col span={8}>
@@ -96,41 +112,21 @@ const StepTimeRequirement: React.FC<Props> = ({
             name="maxCoursesPerDay"
             rules={[{ required: true }]}
           >
-            <InputNumber 
-              min={1} 
-              max={10} 
-              style={{ width: "100%" }} 
-            />
+            <InputNumber min={1} max={10} style={{ width: "100%" }} />
           </Form.Item>
         </Col>
       </Row>
 
       <Row gutter={16}>
-        <Col span={12}>
-          <Form.Item 
-            label="Days" 
-            name="day" 
-            rules={[{ required: true }]}
+        <Col span={24}>
+          <Form.Item
+            label="Conditions"
+            name="conditions"
+            tooltip="Use format: day|condition|value (e.g., friday|!=|12.00)"
           >
-            <Select
-              mode="multiple"
-              options={daysOptions}
-              placeholder="Select days"
-              allowClear
-            />
+            <Input placeholder="e.g., friday|!=|12.00" />
           </Form.Item>
         </Col>
-        <Col span={12}>
-        <Form.Item
-          label="Conditions"
-          name="conditions"
-          tooltip="Use format: day|condition|value (e.g., friday|!=|12.00)"
-        >
-          <Input
-            placeholder="e.g., friday|!=|12.00"
-          />
-        </Form.Item>
-      </Col>
       </Row>
     </Form>
   );
